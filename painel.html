@@ -4,11 +4,12 @@
 		<meta charset="UTF-8">
 		<title>Central de Clientes</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="css/cabecalho/cabecalho.css">
-		<link rel="stylesheet" href="css/cabecalho/menu.css">
-		<link rel="stylesheet" href="css/clientes/clientes.css">
-		<link rel="stylesheet" href="css/js.css">
+		<link rel="stylesheet" type="text/css" href="css/painel/style.css">
+		<link rel="stylesheet" href="css/painel/cabecalho/cabecalho.css">
+		<link rel="stylesheet" href="css/painel/cabecalho/menu.css">
+		<link rel="stylesheet" href="css/painel/clientes/clientes.css">
+		<link rel="stylesheet" href="css/painel/formulario/formulario.css">
+		<link rel="stylesheet" href="css/painel/js.css">
 	</head>
 	<body class="corpo__background">
 
@@ -19,9 +20,9 @@
 			<div class="menu__container">
 				<nav class="menu">
 					<ul class="menu__lista">
-						<li class="menu__item"><a class="menu__link" href="">Painel</a></li>
-						<li class="menu__item"><a class="menu__link" href="">Orçamento</a></li>
-						<li class="menu__item"><a class="menu__link" href="">Anotações</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Painel</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Orçamento</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Anotações</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -129,14 +130,17 @@
 					</fieldset>
 					<button id="adicionar-paciente" class="botao formulario__botao">Adicionar</button>
 				</form>
+				<div>
+					<span></span>
+				</div>
 			</section>
 		</main>
 
-		<script src="scripts/calculaImc.js"></script>
-		<script src="scripts/removerPaciente.js"></script>
-		<script src="scripts/adicionarPaciente.js"></script>
-		<script src="scripts/filtraPaciente.js"></script>
-		<script src="scripts/buscarPaciente.js"></script>
+		<script src="scripts/painel/calculaImc.js"></script>
+		<script src="scripts/painel/removerPaciente.js"></script>
+		<script src="scripts/painel/adicionarPaciente.js"></script>
+		<script src="scripts/painel/filtraPaciente.js"></script>
+		<script src="scripts/painel/buscarPaciente.js"></script>
 
 	</body>
 </html>

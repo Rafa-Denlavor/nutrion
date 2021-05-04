@@ -1,0 +1,21 @@
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__rotulo {
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.formulario__botao {
+  border-radius: 5px;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.formulario__botao:hover {
+  background-color: #58b558;
+  transition-delay: 2ms;
+}

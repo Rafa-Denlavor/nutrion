@@ -3,3 +3,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+.retornaAoInicio__imagem {
+    background-color: #009490;
+    border-radius: 5px;
+    width: 2rem;
+}

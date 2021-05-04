@@ -5,16 +5,28 @@
 		<title>Central de Clientes</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/cabecalho/cabecalho.css">
+		<link rel="stylesheet" href="css/cabecalho/menu.css">
 		<link rel="stylesheet" href="css/clientes/clientes.css">
 		<link rel="stylesheet" href="css/js.css">
 	</head>
 	<body class="corpo__background">
 
-		<header>
-			<div class="container">
-				<h1>Nutricionista - Ana Ferraz</h1>
+		<header class="cabecalho">
+			<picture>
+				<img src="img/nutrion-logo.png" alt="Logo da Nutrion" class="cabecalho__logo">
+			</picture>
+			<div class="menu__container">
+				<nav class="menu">
+					<ul class="menu__lista">
+						<li class="menu__item"><a class="menu__link" href="">Painel</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Orçamento</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Anotações</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
+
 		<main id="conteudo__container">
 			<section class="clientes container">
 				<h2 class="titulo titulo__principal">Meus pacientes</h2>

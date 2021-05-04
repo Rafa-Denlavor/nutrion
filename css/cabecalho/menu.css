@@ -1,0 +1,26 @@
+
+.menu__lista {
+    list-style-type: none;
+    padding: 1.2rem 0;
+}
+
+.menu__item {
+    display: inline;
+    padding-left: 1.5rem;
+}
+
+.menu__item:first-child {
+    padding-left: 0px
+}
+
+.menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #009490;
+    border: 1px solid #009490;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+    padding: 0.5rem;
+
+}

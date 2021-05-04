@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Central de Clientes</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="css/cabecalho/cabecalho.css">
 		<link rel="stylesheet" href="css/cabecalho/menu.css">
 		<link rel="stylesheet" href="css/clientes/clientes.css">
@@ -109,23 +109,24 @@
 				<h2 class="titulo">Adicionar novo paciente</h2>
 				<ul id="mensagensErro"></ul>
 				<form id="form-adiciona">
-					<div class="grupo">
-						<label class="formulario__rotulo" for="nome">Nome:</label>
-						<input id="nome" name="nome" type="text" placeholder="Digite o nome completo" class="campo">
-					</div>
-					<div class="grupo">
-						<label class="formulario__rotulo" for="peso">Peso:</label>
-						<input id="peso" name="peso" type="text" placeholder="Digite o peso" class="campo campo-medio">
-					</div>
-					<div class="grupo">
-						<label class="formulario__rotulo" for="altura">Altura:</label>
-						<input id="altura" name="altura" type="text" placeholder="Digite a altura" class="campo campo-medio">
-					</div>
-					<div class="grupo">
-						<label class="formulario__rotulo" for="gordura">% de Gordura:</label>
-						<input id="gordura" type="text" placeholder="Digite a porcentagem de gordura" class="campo campo-medio">
-					</div>
-
+					<fieldset class="formulario__container">
+						<div class="grupo">
+							<label class="formulario__rotulo" for="nome">Nome:</label>
+							<input id="nome" name="nome" type="text" placeholder="Digite o nome completo" class="campo">
+						</div>
+						<div class="grupo">
+							<label class="formulario__rotulo" for="peso">Peso:</label>
+							<input id="peso" name="peso" type="text" placeholder="Digite o peso" class="campo">
+						</div>
+						<div class="grupo">
+							<label class="formulario__rotulo" for="altura">Altura:</label>
+							<input id="altura" name="altura" type="text" placeholder="Digite a altura" class="campo">
+						</div>
+						<div class="grupo">
+							<label class="formulario__rotulo" for="gordura">% de Gordura:</label>
+							<input id="gordura" type="text" placeholder="Digite a porcentagem de gordura" class="campo">
+						</div>
+					</fieldset>
 					<button id="adicionar-paciente" class="botao formulario__botao">Adicionar</button>
 				</form>
 			</section>

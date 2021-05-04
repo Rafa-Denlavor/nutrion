@@ -62,7 +62,7 @@ th {
 }
 
 .campo {
-  margin: 0;
+  margin-right: 1rem;
   padding-bottom: 1em;
   border: 1px solid #ccc;
   padding: 0.7em;
@@ -70,11 +70,6 @@ th {
   color: black;
 }
 
-
-.campo-medio {
-  display: inline-block;
-  padding-right: 0.5em;
-}
 
 .grupo {
   width: 32%;
@@ -109,6 +104,10 @@ th {
   padding: 0.5em 2em;
   width: 12rem;
 
+}
+
+.formulario__container {
+    display: flex;
 }
 
 .formulario__botao {

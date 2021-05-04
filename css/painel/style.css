@@ -118,6 +118,9 @@ th {
   color: black;
 }
 
+.seta__imagem {
+  width: 2.2rem;
+}
 
 
 @media screen and (min-width: 1px) {

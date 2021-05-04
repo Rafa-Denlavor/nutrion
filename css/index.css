@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+ 
+
+#conteudo__container {
+  padding: 2rem;
+}
+
+.corpo__background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: #a6f59a;
+  height: 3em;
+  color: #000;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+}
+header h2 {
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .container:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.titulo__principal {
+  padding-bottom: 1rem;
+}
+
+section {
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: 550;
+  font-size: 2.5rem;
+}
+
+
+table {
+  width: 100%;
+  margin-bottom: 0.5em;
+  table-layout: fixed;
+}
+
+td,
+th {
+  padding: 0.7em;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #a6f59a;
+  color: black;
+}
+
+.campo {
+  margin: 0;
+  padding-bottom: 1em;
+  border: 1px solid #ccc;
+  padding: 0.7em;
+  width: 100%;
+  color: black;
+}
+
+
+.campo-medio {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.grupo {
+  width: 32%;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.formulario__rotulo {
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+#adicionar-paciente {
+  margin-top: 30px;
+}
+
+.paciente__invalido {
+  background-color: lightcoral;
+  font-weight: bold;
+}
+
+.botao {
+  border: 0;
+  border-bottom: 3px solid;
+  border-color: #04324c;
+  color:black;
+  cursor: pointer;
+  display: block;
+  padding: 0.5em 2em;
+  width: 12rem;
+
+}
+
+.formulario__botao {
+  background-color: #a6f59a;
+  border-radius: 5px;
+  border: 2px solid #58b558;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.formulario__botao:hover {
+  background-color: #58b558;
+  transition-delay: 2ms;
+}
+
+.filtro__container { 
+  display: grid;
+  place-items: center;
+  padding: 1.5rem 0;
+}
+
+.filtro__rotulo {
+  padding-bottom: 0.5rem;
+}
+
+
+#filtroTabela {
+  padding: 7px;
+  color: black;
+}
+
+
+
+@media screen and (min-width: 1px) {
+  .container {
+    width: 100%;
+  }
+
+  body {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corpo__background {
+    background-image: url(https://images.pexels.com/photos/1687341/pexels-photo-1687341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+
+  .container {
+    width: 80%;
+  }
+}

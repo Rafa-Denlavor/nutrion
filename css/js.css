@@ -1,0 +1,40 @@
+#mensagensErro {
+    color: lightcoral;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+  
+.fadeOut {
+    opacity: 0;
+    transition: 0.5ms;
+}
+
+.invisivel {
+    display: none;
+}
+
+/*Classificação*/
+
+.pesoBaixo__cor {
+    background-color: blue;
+}
+
+.saudavel__cor {
+    background-color: green;
+}
+
+.sobrepeso__cor {
+    background-color: yellow;
+}
+
+.obesidade__cor {
+    background-color: orange;
+}
+
+.obesidadeSevera__cor {
+    background-color: red;
+}
+
+.obesidadeMorbida__cor {
+    background-color: purple;
+}

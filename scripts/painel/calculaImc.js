@@ -48,23 +48,22 @@ for(let i = 0; i < pacientes.length; i++) {
     if(pesoEValido && alturaEValida && gorduraEValida) {
         var imc =  calculaImc(peso, altura);
 
-        var resultadoImc = tdImc.textContent = imc;
+        const resultadoImc = tdImc.textContent = imc;
         
         if(resultadoImc < 18.5) {
-            paciente.classList.add("pesoBaixo__cor");
-        if(resultadoImc >= 18.5 || resultadoImc <= 24.9) 
-            paciente.textContent = classList.add("saudavel__cor");
-        if(resultadoImc >= 25 || resultadoImc <= 29.9) 
-            paciente.classList.add("sobrepeso__cor");
-        if(resultadoImc >= 30 || resultadoImc <= 34.9) 
-            paciente.classList.add("obesidade__cor");
-        if(resultadoImc >= 35 || resultadoImc <= 39.9) 
-            paciente.classList.add("obesidadeSevera__cor");
+            tdImc.classList.add("pesoBaixo__cor");
+        if(resultadoImc >= 18.5 && resultadoImc <= 24.9) 
+            tdImc.textContent = classList.add("saudavel__cor");
+        if(resultadoImc >= 25 && resultadoImc <= 29.9) 
+            tdImc.classList.add("sobrepeso__cor");
+        if(resultadoImc >= 30 && resultadoImc <= 34.9) 
+            tdImc.classList.add("obesidade__cor");
+        if(resultadoImc >= 35 && resultadoImc <= 39.9) 
+            tdImc.classList.add("obesidadeSevera__cor");
         if(resultadoImc >= 40) 
-            paciente.classList.add("obesidadeMorbida__cor");
+            tdImc.classList.add("obesidadeMorbida__cor");
         }
     }
-
 
 }
 

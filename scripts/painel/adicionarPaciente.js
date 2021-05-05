@@ -24,6 +24,8 @@ botaoAdicionar.addEventListener("click", function(event) {
     mensagemErro.innerHTML = "";
 });
 
+/*funções*/
+
 function adicionaPacienteNaTabela(paciente) {
     //Captura a tabela de pacientes
     const pacienteTr = montaTr(paciente);
@@ -116,4 +118,5 @@ function validaPaciente(paciente) {
 
     return erros;
 }
+
 

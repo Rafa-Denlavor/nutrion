@@ -59,6 +59,10 @@ th {
   text-align: center;
 }
 
+.info-imc {
+  color: black;
+}
+
 th {
   font-weight: bold;
   background-color: #293039;

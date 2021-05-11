@@ -19,7 +19,7 @@ for(let i = 0; i < pacientes.length; i++) {
     const gordura = tdGordura.textContent;
 
     //captura a tag do imc do paciente
-    const tdImc = paciente.querySelector(".info-imc");
+    let tdImc = paciente.querySelector(".info-imc");
 
     //Com a ajuda das funções, valida se os dados inseridos são válidos
     const pesoEValido = validaPeso(peso);
@@ -48,21 +48,21 @@ for(let i = 0; i < pacientes.length; i++) {
     if(pesoEValido && alturaEValida && gorduraEValida) {
         var imc =  calculaImc(peso, altura);
 
-        const resultadoImc = tdImc.textContent = imc;
+        let resultadoImc = tdImc.textContent = imc;
         
-        if(resultadoImc < 18.5) {
-            tdImc.classList.add("pesoBaixo__cor");
+        if(resultadoImc < 18.5) 
+            tdImc.style.backgroundColor = "blue";
         if(resultadoImc >= 18.5 && resultadoImc <= 24.9) 
-            tdImc.textContent = classList.add("saudavel__cor");
+            tdImc.style.backgroundColor = "green";
         if(resultadoImc >= 25 && resultadoImc <= 29.9) 
-            tdImc.classList.add("sobrepeso__cor");
+        tdImc.style.backgroundColor = "yellow";
         if(resultadoImc >= 30 && resultadoImc <= 34.9) 
-            tdImc.classList.add("obesidade__cor");
+            tdImc.style.backgroundColor = "orange";
         if(resultadoImc >= 35 && resultadoImc <= 39.9) 
-            tdImc.classList.add("obesidadeSevera__cor");
+            tdImc.style.backgroundColor = "red";
         if(resultadoImc >= 40) 
-            tdImc.classList.add("obesidadeMorbida__cor");
-        }
+            tdImc.style.backgroundColor = "purple";
+    
     }
 
 }
@@ -102,6 +102,12 @@ function calculaImc(peso, altura) {
 }
 
 
+function corDaClassificacao() {
+    let td = document.querySelector(".info-imc");
+
+}
 
 
+function corDaClassificacao (resultadoIMc) {
 
+}

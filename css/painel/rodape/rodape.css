@@ -1,0 +1,8 @@
+#rodape {
+    background-color: var(--cinza-escuro);
+    padding: 2rem;
+}
+
+.rodape__imagem {
+    width: 12rem;
+}

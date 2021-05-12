@@ -1,5 +1,5 @@
 #mensagensErro {
-    color: lightcoral;
+    color: var(--invalido);
     font-weight: bold;
     padding: 1rem 0;
   }
@@ -13,28 +13,28 @@
     display: none;
 }
 
-/*Classificação*/
+/*CORES DA CLASSIFICACAO*/
 
 .pesoBaixo__cor {
-    background-color: blue;
+    background-color:var(--marcador-zul);
 }
 
 .saudavel__cor {
-    background-color: green;
+    background-color: var(--marcador-verde);
 }
 
 .sobrepeso__cor {
-    background-color: yellow;
+    background-color: var(--marcador-amarelo);
 }
 
 .obesidade__cor {
-    background-color: orange;
+    background-color: var(--marcador-laranja);
 }
 
 .obesidadeSevera__cor {
-    background-color: red;
+    background-color: var(--marcador-vermelho);
 }
 
 .obesidadeMorbida__cor {
-    background-color: purple;
+    background-color: var(--marcador-roxo);
 }

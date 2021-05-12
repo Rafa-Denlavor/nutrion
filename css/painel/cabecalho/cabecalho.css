@@ -1,6 +1,6 @@
 #cabecalho {
     align-items: center;
-    background-color: #293039;
+    background-color: var(--cabecalho);
     display: flex;
     flex-direction: column;
     justify-content: center;

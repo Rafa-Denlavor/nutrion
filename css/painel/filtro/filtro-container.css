@@ -1,0 +1,5 @@
+.filtro__container { 
+    display: grid;
+    place-items: center;
+    padding: 1.5rem 0;
+  }

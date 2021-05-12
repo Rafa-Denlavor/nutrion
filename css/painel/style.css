@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&family=Raleway:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-size: 17px;
+  font-size: 17px; 
   font-family: 'Raleway', sans-serif;
-  color: white
+  color: white;
 }
  
 
 #conteudo__container {
   margin: auto;
-  width: 70%;
   padding: 2rem 0;
 }
 
 .corpo__background {
-  background-color: #313943;
+  background-color: var(--body-background);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -46,6 +45,7 @@ section {
 
 
 table {
+  
   width: 100%;
   margin-bottom: 0.5em;
   table-layout: fixed;
@@ -55,28 +55,28 @@ td,
 th {
   padding: 0.7em;
   margin: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--cinza-claro);
   text-align: center;
 }
 
 .info-imc {
   color: black;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 th {
   font-weight: bold;
-  background-color: #293039;
+  background-color: var(--cinza-escuro);
   color: white;
 }
 
 .campo {
   padding-bottom: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid var(--cinza-claro);
   padding: 0.7em;
   width: 100%;
   color: black;
 }
-
 
 .grupo {
   display: block;
@@ -88,45 +88,43 @@ th {
 }
 
 .paciente__invalido {
-  background-color: lightcoral;
+  background-color: var(--invalido);
   font-weight: bold;
 }
 
 .botao {
-  background-color: #009490;
+  background-color: var(--verde-agua);
   border: 0;
-  border-bottom: 3px solid;
-  border-color: #04324c;
   color:black;
   cursor: pointer;
   display: block;
-  padding: 0.5em 2em;
+  padding: 0.7em 2em;
   width: 12rem;
-
+  font-weight: bold;
 }
 
-.filtro__container { 
-  display: grid;
-  place-items: center;
-  padding: 1.5rem 0;
+/*------CARACTERÍSTICAS DO ROOT------*/
+
+:root {
+  --cabecalho: #293039;
+  --cinza-escuro: #293039;
+  --cinza-claro: #ccc;
+  --invalido: #f08080;
+  --verde-agua: #099691;
+  --body-background: #313943;
+  --marcador-zul: #8abed0;
+  --marcador-verde: #7de87d;
+  --marcador-amarelo: #e4e458;
+  --marcador-laranja: #ebaf3f;
+  --marcador-vermelho: #d15555;
+  --marcador-roxo: #aa3baa;
+  --rodape-background: #0cbab4;
 }
 
-.filtro__rotulo {
-  padding-bottom: 0.5rem;
-}
+/*------MEDIA QUERY'S------*/
 
 
-#filtroTabela {
-  padding: 7px;
-  color: black;
-}
-
-.seta__imagem {
-  width: 2.2rem;
-}
-
-
-@media screen and (min-width: 1px) {
+@media screen and (min-width: 0) {
   .container {
     width: 100%;
   }
@@ -138,10 +136,17 @@ th {
   body {
     font-size: 1.7rem;
   }
+
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 60%;
   }
 }

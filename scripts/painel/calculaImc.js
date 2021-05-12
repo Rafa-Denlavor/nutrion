@@ -29,7 +29,7 @@ for(let i = 0; i < pacientes.length; i++) {
     //Se o peso não for válido, altura se tornará inválida, o imc receberá 'Peso inválido' como valor e a linha do paciente recebera a classe de 'paciente invalido' para modificar a sua cor.  
     if(!pesoEValido) {
         tdImc.textContent = "Peso inválido!";
-        paciente.classList.add("paciente-invalido");
+        paciente.classList.add("paciente__invalido");
     }
 
     //Se a altura não for válida, o imc receberá 'Altura inválido' como valor e a linha do paciente recebera a classe de 'paciente invalido' para modificar a sua cor.
@@ -51,17 +51,17 @@ for(let i = 0; i < pacientes.length; i++) {
         let resultadoImc = tdImc.textContent = imc;
         
         if(resultadoImc < 18.5) 
-            tdImc.style.backgroundColor = "blue";
+            tdImc.style.backgroundColor = "#8abed0";
         if(resultadoImc >= 18.5 && resultadoImc <= 24.9) 
-            tdImc.style.backgroundColor = "green";
+            tdImc.style.backgroundColor = "#7de87d";
         if(resultadoImc >= 25 && resultadoImc <= 29.9) 
-        tdImc.style.backgroundColor = "yellow";
+        tdImc.style.backgroundColor = "#e4e458";
         if(resultadoImc >= 30 && resultadoImc <= 34.9) 
-            tdImc.style.backgroundColor = "orange";
+            tdImc.style.backgroundColor = "#ebaf3f";
         if(resultadoImc >= 35 && resultadoImc <= 39.9) 
-            tdImc.style.backgroundColor = "red";
+            tdImc.style.backgroundColor = "#e63e3e";
         if(resultadoImc >= 40) 
-            tdImc.style.backgroundColor = "purple";
+            tdImc.style.backgroundColor = "#aa3baa";
     
     }
 

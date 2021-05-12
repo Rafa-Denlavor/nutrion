@@ -1,8 +1,7 @@
 #rodape {
-    background-color: var(--cinza-escuro);
-    padding: 2rem;
-}
-
-.rodape__imagem {
-    width: 12rem;
+    align-items: center;
+    background-color: var(--rodape-background);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 4rem;
 }

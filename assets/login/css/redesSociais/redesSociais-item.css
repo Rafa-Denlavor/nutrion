@@ -1,0 +1,8 @@
+.redesSociais__item {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    width: 35px;
+}

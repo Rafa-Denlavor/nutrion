@@ -1,0 +1,9 @@
+.formulario__botao {
+  border-radius: 5px;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.formulario__botao:hover {
+  background-color: #58b558;
+  transition-delay: 2ms;
+}

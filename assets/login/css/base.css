@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Raleway:wght@400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}*
+
+.conteudo {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 50%;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+}
+
+.conteudo:before{
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+
+}
+
+.botao {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    width: 150px;
+    font-weight: bold;
+    align-self: center;
+    border: none;
+}
+
+.botao:hover {
+    background-color: #58af9b;
+
+}
+
+.botaoCadastro {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.botaoCadastro:hover {
+    background-color: #fff;
+    color: #58af9b;
+    transition-delay: 0.2s;
+
+}
+
+.botaoLogin {
+    color: #000;
+}
+

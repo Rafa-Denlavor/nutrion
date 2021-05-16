@@ -1,0 +1,11 @@
+.retornaAoInicio__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #009490;
+   border-radius: 5px;
+   width: 4rem;
+   padding: 0.2rem 6rem;
+   margin: auto;
+   cursor: pointer;
+}

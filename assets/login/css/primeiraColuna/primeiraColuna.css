@@ -1,0 +1,5 @@
+.primeiraColuna {
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 1;
+}

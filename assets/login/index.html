@@ -4,43 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/primeiraColuna/primeiraColuna.css">
+    <link rel="stylesheet" href="css/primeiraColuna/primeiraColuna-titulo.css">
+    <link rel="stylesheet" href="css/primeiraColuna/primeiraColuna-descricao.css">
+    <link rel="stylesheet" href="css/redesSociais/redesSociais.css">
+    <link rel="stylesheet" href="css/redesSociais/redesSociais-lista.css">
+    <link rel="stylesheet" href="css/redesSociais/redesSociais-item.css">
+    <link rel="stylesheet" href="css/redesSociais/redesSociais-link.css">
+    <link rel="stylesheet" href="css/segundaColuna/segundaColuna.css">
+    <link rel="stylesheet" href="css/segundaColuna/segundaColuna-titulo.css">
+    <link rel="stylesheet" href="css/segundaColuna/segundaColuna-descricao.css">
+    <link rel="stylesheet" href="css/segundaColuna/segundaColuna-formulario.css">
     <title>Nutrion | Login</title>
 </head>
 <body>
-    <div>
-        <div class="cadastro">
+    <div class="container">
+        <div class="conteudo cadastro">
             
             <div class="primeiraColuna"><!--CADASTRO -  COLUNA1-->
                 <h2 class="primeiraColuna-titulo">Bem-vindo de volta!</h2>
                 <p class="primeiraColuna-descricao">Para se manter conectado</p>
                 <p class="primeiraColuna-descricao">entre com suas informações pessoais</p>
-                <button class="botao">Entrar</button>
+                <button class="botao botaoCadastro">Entrar</button>
             </div>
 
-            <div class="segunda__coluna"><!--CADASTRO - COLUNA2-->
-                <h2 class="segunda__coluna-titulo"></h2>
+            <div class="segundaColuna"><!--CADASTRO - COLUNA2-->
+                <h2 class="segundaColuna-titulo">Crie sua conta</h2>
 
                 <div class="redesSociais"><!--REDES SOCIAIS-->
                     <ul class="redesSociais__lista">
-                      <li class="redesSociais__item"><a href="#" class="redesSociais__link">Google</a></li>
-                      <li class="redesSociais__item"><a href="#" class="redesSociais__link">Linkedin</a></li>
-                      <li class="redesSociais__item"><a href="#" class="redesSociais__link">Facebook</a></li>
-                    </ul>
+                        <li class="redesSociais__item">
+                            <a href="#" class="redesSociais__link"><i class="fab fa-google"></i></a>
+                          </li>
+                        <li class="redesSociais__item">
+                            <a href="#" class="redesSociais__link"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        <li class="redesSociais__item">
+                            <a href="#" class="redesSociais__link"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                      </ul>
                 </div>
 
-                <p class="segunda__coluna-descricao">ou utilize o seu email para registro:</p>
-                <form class="segunda__coluna-formulario">
+                <p class="segundaColuna-descricao">ou utilize o seu email para registro:</p>
+                <form class="segundaColuna-formulario">
                     <input type="text" name="" id="" placeholder="Digite o seu nome completo">
                     <input type="password" name="" id="" placeholder="Digite a senha">
                     <input type="email" name="" id="" placeholder="Digite o seu email">
-                    <button class="botao"></button>
+                    <button class="botao botaoLogin">Criar conta</button>
                 </form>
             </div>
 
         </div>
         
         
-        <div class="login">
+        <div class="conteudo login">
 
             <div class="primeiraColuna"><!--LOGIN -  COLUNA1-->
                 <h2 class="primeiraColuna-titulo">Prazer em tê-lo conosco!</h2>
@@ -49,19 +71,25 @@
                 <button class="botao">Entrar</button>
             </div>
 
-            <div class="segunda__coluna"><!--LOGIN - COLUNA2-->
-                <h2 class="segunda__coluna-titulo"></h2>
+            <div class="segundaColuna"><!--LOGIN - COLUNA2-->
+                <h2 class="segundaColuna-titulo"></h2>
 
                 <div class="redesSociais"><!--REDES SOCIAIS-->
                     <ul class="redesSociais__lista">
-                      <li class="redesSociais__item"><a href="#" class="redesSociais__link">Google</a></li>
-                      <li class="redesSociais__item"><a href="#" class="redesSociais__link">Linkedin</a></li>
-                      <li class="redesSociais__item"><a href="#" class="redesSociais__link">Facebook</a></li>
+                      <li class="redesSociais__item">
+                          <a href="#" class="redesSociais__link"><i class="fab fa-google"></i></a>
+                        </li>
+                      <li class="redesSociais__item">
+                          <a href="#" class="redesSociais__link"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      <li class="redesSociais__item">
+                          <a href="#" class="redesSociais__link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
                     </ul>
                 </div>
 
-                <p class="segunda__coluna-descricao">ou utilize o seu email para login:</p>
-                <form class="segunda__coluna-formulario">
+                <p class="segundaColuna-descricao">ou utilize o seu email para login:</p>
+                <form class="segundaColuna-formulario">
                     <input type="password" name="" id="" placeholder="Digite a senha">
                     <input type="email" name="" id="" placeholder="Digite o seu email">
                     <a href="#" class="">esqueceu sua senha?</a>
@@ -71,5 +99,8 @@
 
         </div><!--LOGIN-->
     </div>
+
+    <script src="https://kit.fontawesome.com/bc2981ee4d.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

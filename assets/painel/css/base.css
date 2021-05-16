@@ -43,14 +43,6 @@ section {
   text-align: center;
 }
 
-
-table {
-  
-  width: 100%;
-  margin-bottom: 0.5em;
-  table-layout: fixed;
-}
-
 td,
 th {
   padding: 0.7em;
@@ -101,6 +93,49 @@ th {
   padding: 0.7em 2em;
   width: 12rem;
   font-weight: bold;
+}
+
+/*ESTILO - JAVASCRIPT*/
+
+#mensagensErro {
+  color: var(--invalido);
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: 0.5ms;
+}
+
+.invisivel {
+  display: none;
+}
+
+/*CORES DA CLASSIFICACAO*/
+
+.pesoBaixo__cor {
+  background-color:var(--marcador-zul);
+}
+
+.saudavel__cor {
+  background-color: var(--marcador-verde);
+}
+
+.sobrepeso__cor {
+  background-color: var(--marcador-amarelo);
+}
+
+.obesidade__cor {
+  background-color: var(--marcador-laranja);
+}
+
+.obesidadeSevera__cor {
+  background-color: var(--marcador-vermelho);
+}
+
+.obesidadeMorbida__cor {
+  background-color: var(--marcador-roxo);
 }
 
 /*------CARACTERÍSTICAS DO ROOT------*/

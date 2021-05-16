@@ -29,7 +29,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 function adicionaPacienteNaTabela(paciente) {
     //Captura a tabela de pacientes
     const pacienteTr = montaTr(paciente);
-    const tabela = document.querySelector("#tabela-pacientes");
+    const tabela = document.querySelector("#pacientes__tabela");
     tabela.appendChild(pacienteTr);
 }
 

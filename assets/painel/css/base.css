@@ -43,29 +43,9 @@ section {
   text-align: center;
 }
 
-td,
-th {
-  padding: 0.7em;
-  margin: 0;
-  border: 1px solid var(--cinza-claro);
-  text-align: center;
-}
-
-td {
-  border: 2px solid var(--verde-agua);
-  border-radius: 5px;
-
-}
 .info-imc {
   color: black;
   font-family: 'Rajdhani', sans-serif;
-}
-
-th {
-  font-weight: bold;
-  background-color: var(--cinza-escuro);
-  color: var(--branco);
-  border: none;
 }
 
 .campo {

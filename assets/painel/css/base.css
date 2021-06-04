@@ -51,6 +51,11 @@ th {
   text-align: center;
 }
 
+td {
+  border: 2px solid var(--verde-agua);
+  border-radius: 5px;
+
+}
 .info-imc {
   color: black;
   font-family: 'Rajdhani', sans-serif;
@@ -60,14 +65,17 @@ th {
   font-weight: bold;
   background-color: var(--cinza-escuro);
   color: var(--branco);
+  border: none;
 }
 
 .campo {
   padding-bottom: 1em;
-  border: 1px solid var(--cinza-claro);
+  border: 1px solid var(--verde-agua);
   padding: 0.7em;
   width: 100%;
   color: black;
+  background-color: transparent;
+  border-radius: 5px;
 }
 
 .grupo {
@@ -142,6 +150,7 @@ th {
 
 :root {
   --branco: #fff;
+  --preto: #000;
   --cabecalho: #293039;
   --cinza-escuro: #293039;
   --cinza-claro: #ccc;

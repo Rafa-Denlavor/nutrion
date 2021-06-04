@@ -1,8 +1,12 @@
 .menu__link {
-
     border-radius: 5px;
     color: var(--branco);
     font-weight: 700;
     padding: 0.5rem;
     text-decoration: none;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid var(--verde-agua);
+    padding-bottom: 0.6rem;
 }

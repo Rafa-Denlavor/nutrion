@@ -85,9 +85,9 @@ th {
 }
 
 .botao {
-  background-color: var(--verde-agua);
-  border: 0;
-  color:black;
+  border: 2px solid var(--verde-agua);
+  background-color: transparent;
+  color: var(--branco);
   cursor: pointer;
   display: block;
   padding: 0.7em 2em;

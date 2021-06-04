@@ -4,6 +4,6 @@
 }
 
 .formulario__botao:hover {
-  background-color: #58b558;
+  background-color: var(--verde-agua);
   transition-delay: 2ms;
 }

@@ -52,12 +52,22 @@
 			<picture>
 				<img src="img/nutrion.png" alt="Logo da Nutrion" class="cabecalho__logo">
 			</picture>
+			<div class="filtro__container">
+				<label class="filtro__rotulo" for="filtro__tabela">Filtre pacientes:</label>
+				<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
+			</div>
 			<div class="menu__container">
 				<nav class="menu">
 					<ul class="menu__lista">
-						<li class="menu__item"><a class="menu__link" href="#">Painel</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Orçamento</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Anotações</a></li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Painel</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Orçamento</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Anotações</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -66,11 +76,6 @@
 		<main id="conteudo__container">
 			<section class="clientes container">
 				<h2 class="titulo titulo__principal">Meus pacientes</h2>
-				<hr>
-				<div class="filtro__container">
-					<label class="filtro__rotulo" for="filtro__tabela">Filtre pacientes:</label>
-					<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
-				</div>
 				<hr>
 				<div class="classificacao">
 					<p class="classificacao__paragrafo">Classificação:</p>

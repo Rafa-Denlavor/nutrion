@@ -1,3 +1,4 @@
 .paciente__td {
-   border: none;
+   border: 1px solid var(--verde-agua);
+   border-radius: 5px;
 }

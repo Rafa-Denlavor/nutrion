@@ -8,7 +8,6 @@
   color: var(--branco)
 }
  
-
 #conteudo__container {
   margin: auto;
   padding: 2rem 0;
@@ -16,8 +15,6 @@
 
 .corpo__background {
   background-color: var(--body-background);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -27,20 +24,16 @@
   margin: 0 auto;
 }
 
-.titulo__principal {
-  padding-bottom: 1rem;
-}
-
 section {
   margin: 2em 0;
   overflow: hidden;
 }
 
 .titulo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  font-style: italic;
   text-align: center;
+  padding: 1rem 0;
 }
 
 .info-imc {

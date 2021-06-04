@@ -23,11 +23,11 @@
 		<link rel="stylesheet" href="css/cabecalho/filtro/filtro-tabela.css">
 		<!--CLASSIFICACAO-->
 		<link rel="stylesheet" href="css/classificacao/classificacao.css">
-		<link rel="stylesheet" href="css/classificacao/classificao-paragrafo.css">
 		<link rel="stylesheet" href="css/classificacao/classificacao-lista.css">
 		<link rel="stylesheet" href="css/classificacao/classificacao-item.css">
 		<link rel="stylesheet" href="css/classificacao/marcadores.css">
 		<!--PACIENTES-->
+		<link rel="stylesheet" href="css/pacientes/pacientes.css">
 		<link rel="stylesheet" href="css/pacientes/pacientes-container.css">
 		<link rel="stylesheet" href="css/pacientes/pacientes-tabela.css">
 		<link rel="stylesheet" href="css/pacientes/paciente-tr.css">
@@ -75,10 +75,10 @@
 		</header>
 
 		<main id="conteudo__container">
-			<section class="clientes container">
-				<h2 class="titulo titulo__principal">Meus pacientes</h2>
+
+			<section id="pacientes" class="container">
 				<div class="classificacao">
-					<p class="classificacao__paragrafo">Classificação:</p>
+					<p class="classificacao__paragrafo titulo">Classificação:</p>
 					<ul class="classificacao__lista">
 						<li class="classificacao__item marcador__azul">Peso baixo</li>
 						<li class="classificacao__item marcador__verde">Saudável</li>
@@ -88,7 +88,9 @@
 						<li class="classificacao__item marcador__roxo">Obesidade Mórbida 3</li>
 					</ul>
 				</div>
+				<hr>
 				<div class="pacientes__container">
+					<h2 class="titulo">Meus pacientes</h2>
 					<table id="pacientes__tabela">
 						<thead>
 							<tr>
@@ -149,12 +151,11 @@
 					</table>
 					<span id="erro__ajax" class="invisivel">Erro ao buscar os pacientes</span>
 					<button id="buscar-paciente" class="botao formulario__botao">Buscar paciente</button>
-					<hr>
 				</div>
 			</section>
 
 			<section class="container">
-				<h2 class="titulo">Adicionar novo paciente</h2>
+				<h2 class="titulo">Novo paciente</h2>
 				<ul id="mensagensErro"></ul>
 				<form id="form-adiciona">
 					<fieldset class="formulario__container">
@@ -178,6 +179,7 @@
 					<button id="adicionar-paciente" class="botao formulario__botao">Adicionar</button>
 				</form>
 			</section>
+
 			<section>
 				<div class="retornaAoInicio__container">
 					<a href="#cabecalho">
@@ -185,7 +187,9 @@
 					</a>
 				</div>
 			</section>
+
 		</main>
+
 		<footer id=rodape>
 			<div>
 				<picture>

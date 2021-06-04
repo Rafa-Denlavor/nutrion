@@ -3,9 +3,9 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-size: 17px; 
+  font-size: 15px; 
   font-family: 'Raleway', sans-serif;
-  color: white;
+  color: var(--branco)
 }
  
 
@@ -59,7 +59,7 @@ th {
 th {
   font-weight: bold;
   background-color: var(--cinza-escuro);
-  color: white;
+  color: var(--branco);
 }
 
 .campo {
@@ -141,6 +141,7 @@ th {
 /*------CARACTERÍSTICAS DO ROOT------*/
 
 :root {
+  --branco: #fff;
   --cabecalho: #293039;
   --cinza-escuro: #293039;
   --cinza-claro: #ccc;

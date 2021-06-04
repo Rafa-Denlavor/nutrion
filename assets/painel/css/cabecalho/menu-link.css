@@ -1,11 +1,8 @@
 .menu__link {
-    background-color: #009490;
-    border: 1px solid #009490;
+
     border-radius: 5px;
-    color: black;
+    color: var(--branco);
     font-weight: 700;
     padding: 0.5rem;
     text-decoration: none;
-    text-transform: uppercase;
-
 }

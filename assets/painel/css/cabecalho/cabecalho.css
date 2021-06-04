@@ -2,8 +2,7 @@
     align-items: center;
     background-color: var(--cabecalho);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1.5rem 0;
 }
 

@@ -66,11 +66,11 @@ function montaTr(paciente) {
     pacienteTr.classList.add("paciente__tr");
  
      //Adiciona os fihos (na tr)
-     pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
-     pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
-     pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
-     pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"));
-     pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
+     pacienteTr.appendChild(montaTd(paciente.nome, "paciente__td", "info-nome"));
+     pacienteTr.appendChild(montaTd(paciente.peso, "paciente__td", "info-peso"));
+     pacienteTr.appendChild(montaTd(paciente.altura, "paciente__td", "info-altura"));
+     pacienteTr.appendChild(montaTd(paciente.gordura, "paciente__td", "info-gordura"));
+     pacienteTr.appendChild(montaTd(paciente.imc, "paciente__td", "info-imc"));
 
     return pacienteTr;
 }
@@ -79,7 +79,7 @@ function montaTd(dado, classe) {
     let td = document.createElement("td");
     td.textContent = dado;
     td.classList.add(classe);
-
+    td.classList.add(classe);
     return td;
 }
 

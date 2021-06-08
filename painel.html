@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nutrion | Painel</title>
+		<!--ICON-->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/public/img/icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/public/img/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/public/img/icon/favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="assets/src/css/base.css">
+		<!--CABECALHO-->
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/cabecalho.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/cabecalho-logo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/menu/menu-lista.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/menu/menu-item.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/menu/menu-link.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/filtro/filtro-container.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/filtro/filtro-imagem.css">
+		<link rel="stylesheet" href="assets/src/css/painel/cabecalho/filtro/filtro-tabela.css">
+		<!--CLASSIFICACAO-->
+		<link rel="stylesheet" href="assets/src/css/painel/classificacao/classificacao.css">
+		<link rel="stylesheet" href="assets/src/css/painel/classificacao/classificacao-lista.css">
+		<link rel="stylesheet" href="assets/src/css/painel/classificacao/classificacao-item.css">
+		<link rel="stylesheet" href="assets/src/css/painel/classificacao/marcadores.css">
+		<!--PACIENTES-->
+		<link rel="stylesheet" href="assets/src/css/painel/pacientes/pacientes.css">
+		<link rel="stylesheet" href="assets/src/css/painel/pacientes/pacientes-container.css">
+		<link rel="stylesheet" href="assets/src/css/painel/pacientes/pacientes-tabela.css">
+		<link rel="stylesheet" href="assets/src/css/painel/pacientes/paciente-tr.css">
+		<link rel="stylesheet" href="assets/src/css/painel/pacientes/paciente-td.css">
+		<!--FORMULARIO-->
+		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-container.css">
+		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-rotulo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-botao.css">
+		<!--RETORNA-AO-INICIO-->
+		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-container.css">
+		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-imagem.css">
+		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-paragrafo.css">
+		<!--RODAPE-->
+		<link rel="stylesheet" href="assets/src/css/painel/rodape/rodape.css">
+		<link rel="stylesheet" href="assets/src/css/painel/rodape/rodape-logo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/rodape/redesocial-paragrafo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/rodape/redesocial-imagem.css">
+		<link rel="stylesheet" href="assets/src/css/painel/rodape/redesocial-link.css">
+	</head>
+	<body class="corpo__background">
+
+		<header id="cabecalho">
+			<picture>
+				<img src="assets/public/img/logo.png" alt="Logo da Nutrion" class="cabecalho__logo">
+			</picture>
+			<div class="filtro__container">
+				<img src="assets/public/img/lupa.svg" alt="" class="filtro__imagem">
+				<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
+			</div>
+			<div class="menu__container">
+				<nav class="menu">
+					<ul class="menu__lista">
+						<li class="menu__item">
+							<a class="menu__link" href="#">Painel</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Orçamento</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Anotações</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="conteudo__container">
+
+			<section id="pacientes" class="container">
+				<div class="classificacao">
+					<p class="classificacao__paragrafo titulo">Classificação:</p>
+					<ul class="classificacao__lista">
+						<li class="classificacao__item marcador__azul">Peso baixo</li>
+						<li class="classificacao__item marcador__verde">Saudável</li>
+						<li class="classificacao__item marcador__amarelo">Sobrepeso</li>
+						<li class="classificacao__item marcador__laranja">Obesidade 1</li>
+						<li class="classificacao__item marcador__vermelho">Obesidade Severa 2</li>
+						<li class="classificacao__item marcador__roxo">Obesidade Mórbida 3</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="pacientes__container">
+					<h2 class="titulo">Meus pacientes</h2>
+					<div class="pacientes__scroll">
+						<table id="pacientes__tabela">
+							<thead>
+								<tr>
+									<th>Nome</th>
+									<th>Peso(kg)</th>
+									<th>Altura(m)</th>
+									<th>Gordura Corporal(%)</th>
+									<th>IMC</th>
+								</tr>
+							</thead>
+							<tbody id="pacientes__tabela">
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">Paulo</td>
+									<td class="paciente__td info-peso">150</td>
+									<td class="paciente__td info-altura">2.00</td>
+									<td class="paciente__td info-gordura">10</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">João</td>
+									<td class="paciente__td info-peso">90</td>
+									<td class="paciente__td info-altura">1.72</td>
+									<td class="paciente__td info-gordura">40</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">Erica</td>
+									<td class="paciente__td info-peso">54</td>
+									<td class="paciente__td info-altura">2.33</td>
+									<td class="paciente__td info-gordura">14</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">Douglas</td>
+									<td class="paciente__td info-peso">80</td>
+									<td class="paciente__td info-altura">1.73</td>
+									<td class="paciente__td info-gordura">24</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">Tatiana</td>
+									<td class="paciente__td info-peso">46</td>
+									<td class="paciente__td info-altura">1.55</td>
+									<td class="paciente__td info-gordura">19</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">Henrique</td>
+									<td class="paciente__td info-peso">250</td>
+									<td class="paciente__td info-altura">2.20</td>
+									<td class="paciente__td info-gordura">19</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<span id="erro__ajax" class="invisivel">Erro ao buscar os pacientes</span>
+					<button id="buscar-paciente" class="botao formulario__botao">Buscar paciente</button>
+				</div>
+			</section>
+
+			<section class="container">
+				<h2 class="titulo">Novo paciente</h2>
+				<ul id="mensagensErro"></ul>
+				<form id="form-adiciona">
+					<fieldset class="formulario__container">
+						<div class="grupo">
+							<label class="formulario__rotulo" for="nome">Nome completo:</label>
+							<input id="nome" name="nome" type="text" placeholder="Ex: Helena Cristina Rousel" class="campo">
+						</div>
+						<div class="grupo">
+							<label class="formulario__rotulo" for="peso">Peso:</label>
+							<input id="peso" name="peso" type="text" placeholder="Ex: 70" class="campo">
+						</div>
+						<div class="grupo">
+							<label class="formulario__rotulo" for="altura">Altura:</label>
+							<input id="altura" name="altura" type="text" placeholder="Ex: 1.72" class="campo">
+						</div>
+						<div class="grupo">
+							<label class="formulario__rotulo" for="gordura">% de Gordura:</label>
+							<input id="gordura" type="text" placeholder="Ex: 10" class="campo">
+						</div>
+					</fieldset>
+					<button id="adicionar-paciente" class="botao formulario__botao">Adicionar</button>
+				</form>
+			</section>
+
+			<section>
+				<div class="retornaAoInicio__container">
+					<a href="#cabecalho">
+						<img src="assets/public/img/seta.png" class="retornaAoInicio__imagem" alt="">
+					</a>
+				</div>
+			</section>
+
+		</main>
+
+		<footer id=rodape>
+			<div>
+				<picture>
+					<img src="assets/public/img/nutrion-preto.svg" alt="" class="rodape__logo">
+				</picture>
+			<p class="redeSocial__paragrafo">Entre em contato através das nossas redes sociais:</p>
+			</div>
+			<div class=redeSocial>
+				<a href="tel:+5511960307271" target="_blank" rel="external" class="redeSocial__link">
+				  <img src="assets/public/img/whatsapp.png" alt="" class="redeSocial__imagem">
+				</a>
+				<a href="#" target="_blank" rel="external" class="redeSocial__link">
+				  <img src="assets/public/img/facebook.png" alt="" class="redeSocial__imagem">
+				</a>
+				<a href="#" target="_blank" rel="external" class="redeSocial__link">
+				  <img src="assets/public/img/instagram.png" alt="" class="redeSocial__imagem">
+				</a>
+				<a href="https://www.linkedin.com/in/rafaella-lopes-a9708b199/" target="_blank" rel="external" class="redeSocial__link">
+					<img src="assets/public/img/linkedin.png" alt="" class="redeSocial__imagem">
+				  </a>
+			</div>
+		</footer>
+
+		<script src="assets/src/js/calculaImc.js"></script>
+		<script src="assets/src/js/removerPaciente.js"></script>
+		<script src="assets/src/js/adicionarPaciente.js"></script>
+		<script src="assets/src/js/filtraPaciente.js"></script>
+		<script src="assets/src/js/buscarPaciente.js"></script>
+
+	</body>
+</html>

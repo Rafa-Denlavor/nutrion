@@ -65,6 +65,14 @@ section {
   padding: 0.7em 2em;
   width: 12rem;
   font-weight: bold;
+  border-radius: 5px;
+  margin: 1.5rem 0 2rem 0;
+
+}
+
+.botao:hover {
+  background-color: var(--verde-agua);
+  transition-delay: 2ms;
 }
 
 /*ESTILO - JAVASCRIPT*/

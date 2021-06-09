@@ -3,8 +3,3 @@
     border-radius: 5px;
     padding: 2rem 0;
 }
-
-.pacientes__scroll {
-    height: 400px;
-    overflow-y: auto;
-}

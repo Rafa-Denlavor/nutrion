@@ -51,17 +51,17 @@ for(let i = 0; i < pacientes.length; i++) {
         let resultadoImc = tdImc.textContent = imc;
         
         if(resultadoImc < 18.5) 
-            tdImc.style.backgroundColor = "#8abed0";
+            tdImc.classList.add('pesoBaixo__cor');
         if(resultadoImc >= 18.5 && resultadoImc <= 24.9) 
-            tdImc.style.backgroundColor = "#7de87d";
+            tdImc.classList.add('saudavel__cor');
         if(resultadoImc >= 25 && resultadoImc <= 29.9) 
-        tdImc.style.backgroundColor = "#e4e458";
+            tdImc.classList.add('sobrepeso__cor');
         if(resultadoImc >= 30 && resultadoImc <= 34.9) 
-            tdImc.style.backgroundColor = "#ebaf3f";
+            tdImc.classList.add('obesidade__cor');
         if(resultadoImc >= 35 && resultadoImc <= 39.9) 
-            tdImc.style.backgroundColor = "#e63e3e";
+            tdImc.classList.add('obesidadeSevera__cor');
         if(resultadoImc >= 40) 
-            tdImc.style.backgroundColor = "#aa3baa";
+            tdImc.classList.add('obesidadeMorbida__cor');
     
     }
 
@@ -104,10 +104,5 @@ function calculaImc(peso, altura) {
 
 function corDaClassificacao() {
     let td = document.querySelector(".info-imc");
-
-}
-
-
-function corDaClassificacao (resultadoIMc) {
 
 }

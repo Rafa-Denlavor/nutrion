@@ -36,14 +36,11 @@
 		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-container.css">
 		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-rotulo.css">
 		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-botao.css">
-		<!--RETORNA-AO-INICIO-->
-		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-container.css">
-		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-imagem.css">
-		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-paragrafo.css">
 		<!--RODAPE-->
 		<link rel="stylesheet" href="assets/src/css/painel/rodape/rodape.css">
 		<link rel="stylesheet" href="assets/src/css/painel/rodape/rodape-logo.css">
 		<link rel="stylesheet" href="assets/src/css/painel/rodape/redesocial-paragrafo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/retornaAoInicio/retornaAoInicio-imagem.css">
 		<link rel="stylesheet" href="assets/src/css/painel/rodape/redesocial-imagem.css">
 		<link rel="stylesheet" href="assets/src/css/painel/rodape/redesocial-link.css">
 	</head>
@@ -51,12 +48,8 @@
 
 		<header id="cabecalho">
 			<picture>
-				<img src="assets/public/img/logo.png" alt="Logo da Nutrion" class="cabecalho__logo">
+				<img src="assets/public/img/nutrion.png" alt="Logo da Nutrion" class="cabecalho__logo">
 			</picture>
-			<div class="filtro__container">
-				<img src="assets/public/img/lupa.svg" alt="" class="filtro__imagem">
-				<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
-			</div>
 			<div class="menu__container">
 				<nav class="menu">
 					<ul class="menu__lista">
@@ -71,6 +64,10 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+			<div class="filtro__container">
+				<img src="assets/public/img/lupa.svg" alt="" class="filtro__imagem">
+				<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
 			</div>
 		</header>
 
@@ -182,14 +179,6 @@
 				</form>
 			</section>
 
-			<section>
-				<div class="retornaAoInicio__container">
-					<a href="#cabecalho">
-						<img src="assets/public/img/seta.png" class="retornaAoInicio__imagem" alt="Seta para retornar ao início">
-					</a>
-				</div>
-			</section>
-
 		</main>
 
 		<footer id=rodape>
@@ -199,18 +188,23 @@
 				</picture>
 			<p class="redeSocial__paragrafo">Entre em contato através das nossas redes sociais:</p>
 			</div>
+			<div>
+				<a href="#cabecalho">
+					<img src="assets/public/img/seta.svg" class="retornaAoInicio__imagem" alt="Seta para retornar ao início">
+				</a>
+			</div>
 			<div class=redeSocial>
 				<a href="tel:+5511960307271" target="_blank" rel="external" class="redeSocial__link">
-				  <img src="assets/public/img/whatsapp.png" alt="Icone do whatsapp" class="redeSocial__imagem">
+				  <img src="assets/public/img/icone-whatsapp.svg" alt="Icone do whatsapp" class="redeSocial__imagem">
 				</a>
 				<a href="#" target="_blank" rel="external" class="redeSocial__link">
-				  <img src="assets/public/img/facebook.png" alt="Icone do facebook" class="redeSocial__imagem">
+				  <img src="assets/public/img/icone-facebook.svg" alt="Icone do facebook" class="redeSocial__imagem">
 				</a>
 				<a href="#" target="_blank" rel="external" class="redeSocial__link">
-				  <img src="assets/public/img/instagram.png" alt="Icone do instagram" class="redeSocial__imagem">
+				  <img src="assets/public/img/icone-instagram.svg" alt="Icone do instagram" class="redeSocial__imagem">
 				</a>
 				<a href="https://www.linkedin.com/in/rafaella-lopes-a9708b199/" target="_blank" rel="external" class="redeSocial__link">
-					<img src="assets/public/img/linkedin.png" alt="Icone do linkedin" class="redeSocial__imagem">
+					<img src="assets/public/img/icone-linkedin.svg" alt="Icone do linkedin" class="redeSocial__imagem">
 				  </a>
 			</div>
 		</footer>
@@ -220,6 +214,7 @@
 		<script src="assets/src/js/adicionarPaciente.js"></script>
 		<script src="assets/src/js/filtraPaciente.js"></script>
 		<script src="assets/src/js/buscarPaciente.js"></script>
+		<script src="assets/src/js/components/ValidaPeso/"></script>
 
 	</body>
 </html>

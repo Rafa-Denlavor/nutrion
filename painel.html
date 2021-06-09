@@ -35,6 +35,7 @@
 		<!--FORMULARIO-->
 		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-container.css">
 		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-rotulo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-campo.css">
 		<link rel="stylesheet" href="assets/src/css/painel/formulario/formulario-botao.css">
 		<!--RODAPE-->
 		<link rel="stylesheet" href="assets/src/css/painel/rodape/rodape.css">
@@ -87,7 +88,13 @@
 				</div>
 				<hr>
 				<div class="pacientes__container">
-					<h2 class="titulo">Meus pacientes</h2>
+					<div>
+						<h2 class="titulo">Meus pacientes</h2>
+						<picture>
+							<img src="" alt="" class="pacientes__icone--adicionarPaciente">
+							<img src="" alt="" class="pacientes__icone--deletarPaciente">
+						</picture>
+					</div>
 					<div class="pacientes__scroll">
 						<table id="pacientes__tabela">
 							<thead>
@@ -160,19 +167,19 @@
 					<fieldset class="formulario__container">
 						<div class="grupo">
 							<label class="formulario__rotulo" for="nome">Nome completo:</label>
-							<input id="nome" name="nome" type="text" placeholder="Ex: Helena Cristina Rousel" class="campo">
+							<input id="nome" name="nome" type="text" placeholder="Ex: Helena Cristina Rousel" class="formulario__campo">
 						</div>
 						<div class="grupo">
 							<label class="formulario__rotulo" for="peso">Peso:</label>
-							<input id="peso" name="peso" type="text" placeholder="Ex: 70" class="campo">
+							<input id="peso" name="peso" type="text" placeholder="Ex: 70" class="formulario__campo">
 						</div>
 						<div class="grupo">
 							<label class="formulario__rotulo" for="altura">Altura:</label>
-							<input id="altura" name="altura" type="text" placeholder="Ex: 1.72" class="campo">
+							<input id="altura" name="altura" type="text" placeholder="Ex: 1.72" class="formulario__campo">
 						</div>
 						<div class="grupo">
 							<label class="formulario__rotulo" for="gordura">% de Gordura:</label>
-							<input id="gordura" type="text" placeholder="Ex: 10" class="campo">
+							<input id="gordura" type="text" placeholder="Ex: 10" class="formulario__campo">
 						</div>
 					</fieldset>
 					<button id="adicionar-paciente" class="botao formulario__botao">Adicionar</button>
@@ -205,7 +212,10 @@
 				</a>
 				<a href="https://www.linkedin.com/in/rafaella-lopes-a9708b199/" target="_blank" rel="external" class="redeSocial__link">
 					<img src="assets/public/img/icone-linkedin.svg" alt="Icone do linkedin" class="redeSocial__imagem">
-				  </a>
+				</a>
+				<a href="mailto:rafinhacrisdenlavor@gmail.com" target="_blank" rel="external" class="redeSocial__link">
+					<img src="assets/public/img/icone-email.svg" alt="Icone de email" class="redeSocial__imagem">
+				</a>
 			</div>
 		</footer>
 

@@ -1,0 +1,13 @@
+.formulario__campo {
+   padding-bottom: 1em;
+   border: 1px solid var(--verde-agua);
+   padding: 0.7em;
+   width: 100%;
+   color: white;
+   background-color: transparent;
+   border-radius: 5px;
+ }
+ 
+ .formulario__campo:hover {
+   background-color: #293039;
+ }

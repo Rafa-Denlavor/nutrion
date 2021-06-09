@@ -32,7 +32,7 @@ section {
 .titulo {
   font-size: 2rem;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
 }
 
@@ -41,19 +41,6 @@ section {
   font-family: 'Rajdhani', sans-serif;
 }
 
-.campo {
-  padding-bottom: 1em;
-  border: 1px solid var(--verde-agua);
-  padding: 0.7em;
-  width: 100%;
-  color: black;
-  background-color: transparent;
-  border-radius: 5px;
-}
-
-.campo:hover {
-  background-color: var(--cinza-claro);
-}
 
 .grupo {
   display: block;

@@ -1,7 +1,21 @@
 #rodape {
-    align-items: center;
     background-color: var(--rodape-background);
-    justify-content: space-between;
-    display: flex;
     padding: 1.5rem 4rem;
+}
+
+@media screen and (min-width: 1px) and (max-width: 1023px) {
+    #rodape {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #rodape {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
 }

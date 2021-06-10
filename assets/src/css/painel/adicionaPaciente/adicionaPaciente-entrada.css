@@ -1,5 +1,19 @@
-.adicionaPaciente__entrada {
-   background-color: black;
-   padding: 0.2rem 0.5rem;
-   font-size: 50px;
+.adicionaPaciente__entrada--adiciona, .adicionaPaciente__entrada--remove {
+   background-color: white;
+   background-position: center;
+   background-size: 80%;
+   background-repeat: no-repeat;
+   border: 2px solid var(--cabecalho);
+   margin-left: 1rem;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 5px;
+}
+
+.adicionaPaciente__entrada--adiciona {
+   background-image: url(https://image.flaticon.com/icons/png/128/4850/4850980.png);
+}
+
+.adicionaPaciente__entrada--remove {
+   background-image: url(https://image.flaticon.com/icons/png/512/4850/4850968.png);
 }

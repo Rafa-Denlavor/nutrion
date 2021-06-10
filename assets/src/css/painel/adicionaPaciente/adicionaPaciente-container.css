@@ -1,6 +1,6 @@
 .adicionaPaciente__container {
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   padding: 1rem 0;
+   justify-content: flex-end;
+   padding-top: 1.5em;
 } 

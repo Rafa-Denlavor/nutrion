@@ -1,0 +1,5 @@
+#formulario {
+   background-color: var(--gray-800);
+   padding: 2rem; 
+   border-radius: 10px;
+}

@@ -1,8 +1,8 @@
 .paciente__tr {
    font-weight: bold;
-   background-color: var(--cinza-escuro);
-   color: var(--branco);
-   border: 2px solid var(--verde-agua);
+   background-color: var(--secondary-color);
+   color: var(--white);
+   border: 2px solid var(--primary-color);
  }
 
 .paciente__td,

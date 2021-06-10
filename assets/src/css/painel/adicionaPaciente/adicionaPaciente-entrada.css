@@ -2,7 +2,7 @@
    background-position: center;
    background-size: 80%;
    background-repeat: no-repeat;
-   border: 2px solid var(--cabecalho);
+   border: 2px solid var(--secondary-color);
    margin-left: 1rem;
    width: 3rem;
    height: 3rem;
@@ -11,11 +11,11 @@
 
 .adicionaPaciente__entrada--adiciona {
    background-image: url(https://image.flaticon.com/icons/png/128/4850/4850980.png);
-   background-color: var(--green-color);
+   background-color: var(--green-400);
 
 }
 
 .adicionaPaciente__entrada--remove {
    background-image: url(https://image.flaticon.com/icons/png/512/4850/4850968.png);
-   background-color: var(--marcador-vermelho);
+   background-color: var(--red);
 }

@@ -4,10 +4,3 @@
    border: none;
    padding: 0;
 }
-
-#formulario {
-   background-color: rgb(24, 23, 23);
-   padding: 2rem; 
-   border-radius: 10px; 
-   border-top-right-radius: 10%;
-}

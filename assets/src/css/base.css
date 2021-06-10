@@ -5,7 +5,7 @@
   margin: 0;
   font-size: 15px; 
   font-family: 'Raleway', sans-serif;
-  color: var(--branco)
+  color: var(--white)
 }
  
 #conteudo__container {
@@ -14,7 +14,7 @@
 }
 
 .corpo__background {
-  background-color: var(--body-background);
+  background-color: var(--gray-700);
   height: 100%;
   width: 100%;
 }
@@ -37,7 +37,7 @@ section {
 }
 
 .info-imc {
-  color: black;
+  color: var(--black);
   font-family: 'Rajdhani', sans-serif;
 }
 
@@ -57,7 +57,7 @@ section {
 }
 
 .botao {
-  border: 2px solid var(--verde-agua);
+  border: 2px solid var(--primary-color);
   background-color: transparent;
   color: var(--branco);
   cursor: pointer;
@@ -71,7 +71,7 @@ section {
 }
 
 .botao:hover {
-  background-color: var(--verde-agua);
+  background-color: var(--primary-color);
   transition-delay: 2ms;
 }
 
@@ -99,48 +99,49 @@ section {
 /*CORES DA CLASSIFICACAO*/
 
 .pesoBaixo__cor {
-  background-color:var(--marcador-zul);
+  background-color:var(--light-blue);
 }
 
 .saudavel__cor {
-  background-color: var(--marcador-verde);
+  background-color: var(--green-300);
 }
 
 .sobrepeso__cor {
-  background-color: var(--marcador-amarelo);
+  background-color: var(--yellow);
 }
 
 .obesidade__cor {
-  background-color: var(--marcador-laranja);
+  background-color: var(--orange);
 }
 
 .obesidadeSevera__cor {
-  background-color: var(--marcador-vermelho);
+  background-color: var(--red);
 }
 
 .obesidadeMorbida__cor {
-  background-color: var(--marcador-roxo);
+  background-color: var(--purple);
 }
 
 /*------COLORS-----*/
 
 :root {
-  --branco: #fff;
-  --preto: #000;
-  --cabecalho: #293039;
-  --cinza-escuro: #293039;
-  --cinza-claro: #ccc;
+  --primary-color: #20B2AA	;
+  --secondary-color: #293039;
+  --third-color: #008B8B;
   --invalido: #f08080;
-  --verde-agua: #099691;
-  --body-background: #313943;
-  --marcador-zul: #8abed0;
-  --marcador-verde: #7de87d;
-  --marcador-amarelo: #e4e458;
-  --marcador-laranja: #ebaf3f;
-  --marcador-vermelho: #d15555;
-  --marcador-roxo: #aa3baa;
-  --rodape-background: #0cbab4;
-  --green-color: #2fbb2f;
+  --light-blue: #8abed0;
+  --yellow: #e4e458;
+  --orange: #ebaf3f;
+  --red: #d15555;
+  --purple: #aa3baa;
+  --green-300: #7de87d;
+  --green-400: #2fbb2f;
+  --gray-300: #ccc;
+  --gray-700: #313943;
+  --gray-800: #293039;
+  --gray-900: #181717;
+  --white: #fff;
+  --black: #000;
 }
 
 /*------MEDIA QUERY'S------*/

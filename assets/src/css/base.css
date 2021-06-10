@@ -92,6 +92,10 @@ section {
   display: none;
 }
 
+.mostrar {
+  display: block;
+}
+
 /*CORES DA CLASSIFICACAO*/
 
 .pesoBaixo__cor {

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Nutrion | Painel</title>
+		<title>Nutrion | Painel de pacientes</title>
 		<!--ICON-->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/public/img/icon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/public/img/icon/favicon-32x32.png">
@@ -55,6 +55,7 @@
 			<picture>
 				<img src="assets/public/img/nutrion.png" alt="Logo da Nutrion" class="cabecalho__logo">
 			</picture>
+			<!--MENU-->
 			<div class="menu__container">
 				<nav class="menu">
 					<ul class="menu__lista">
@@ -70,6 +71,7 @@
 					</ul>
 				</nav>
 			</div>
+			<!--FILRTO-->
 			<div class="filtro__container">
 				<img src="assets/public/img/lupa.svg" alt="Filtrar paciente" class="filtro__imagem">
 				<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
@@ -123,6 +125,9 @@
 							<label class="formulario__rotulo" for="gordura">% de Gordura:</label>
 							<input id="gordura" type="text" placeholder="Ex: 10" class="formulario__campo">
 						</div>
+						<div>
+
+						</div>
 					</fieldset>
 					<button id="adicionar-paciente" class="botao">Adicionar</button>
 				</form>
@@ -130,8 +135,8 @@
 			<!--PACIENTES-->
 			<section id="pacientes" class="container">
 				<div class="pacientes__container--tabela">
+					<h2 class="titulo">Histórico de Pacientes</h2>
 					<div class="pacientes__scroll">
-						<h2 class="titulo">Meus pacientes</h2>
 						<table id="pacientes__tabela">
 							<thead>
 								<tr>
@@ -186,6 +191,13 @@
 									<td class="paciente__td info-peso">250</td>
 									<td class="paciente__td info-altura">2.20</td>
 									<td class="paciente__td info-gordura">19</td>
+									<td class="paciente__td info-imc">0</td>
+								</tr>
+								<tr class="paciente__tr">
+									<td class="paciente__td info-nome">Maria</td>
+									<td class="paciente__td info-peso">64</td>
+									<td class="paciente__td info-altura">1.55</td>
+									<td class="paciente__td info-gordura">10</td>
 									<td class="paciente__td info-imc">0</td>
 								</tr>
 							</tbody>

@@ -26,6 +26,13 @@
 		<link rel="stylesheet" href="assets/src/css/painel/classificacao/classificacao-lista.css">
 		<link rel="stylesheet" href="assets/src/css/painel/classificacao/classificacao-item.css">
 		<link rel="stylesheet" href="assets/src/css/painel/classificacao/marcadores.css">
+		<!--INTRUCOES-->
+		<link rel="stylesheet" href="assets/src/css/painel/instrucoes/instrucoes.css">
+		<link rel="stylesheet" href="assets/src/css/painel/instrucoes/instrucoes-icone.css">
+		<link rel="stylesheet" href="assets/src/css/painel/instrucoes/instrucoes-container.css">
+		<link rel="stylesheet" href="assets/src/css/painel/instrucoes/instrucoes-titulo.css">
+		<link rel="stylesheet" href="assets/src/css/painel/instrucoes/instrucoes-lista.css">
+		<link rel="stylesheet" href="assets/src/css/painel/instrucoes/instrucoes-item.css">
 		<!--ADICIONA PACIENTE-->
 		<link rel="stylesheet" href="assets/src/css/painel/adicionaPaciente/adicionaPaciente-container.css">
 		<link rel="stylesheet" href="assets/src/css/painel/adicionaPaciente/adicionaPaciente-entrada.css">
@@ -95,13 +102,25 @@
 				</div>
 				<hr>
 			</section>
+			<!--INSTRUCOES-->
+			<section id="instrucoes" class="container">
+				<div class="instrucoes__container">
+					<h3 class="instrucoes__titulo">Instruções</h3>
+					<img src="assets/public/img/icone-fechar.svg" alt="" title="Adicionar novo paciente" onClick="eventosFormulario()" class="instrucoes__icone">
+				</div>
+				<div>
+					<ul class="instrucoes__lista">
+						<li class="instrucoes__item">Deletar paciente: Dê dois clicks no paciente para removê-lo da tabela.</li>
+						<li class="instrucoes__item">Adicionar paciente: Aperte o botão de mais para adicionar um novo paciente.</li>
+						<li class="instrucoes__item">Editar paciente: Clique sobre o dado pare editá-lo.</li>
+						<li class="instrucoes__item">Observação: Não é possível editar o imc do paciente.</li>
+					</ul>
+				</div>
+			</section>
 			<!--NOVO PACIENTE-->
 			<section id="adicionaPaciente" class="container">
 				<div class="adicionaPaciente__container"> 
-					<div>
-						<input type="button" class="adicionaPaciente__entrada--adiciona" onClick="mostrarFormulario()" ondblclick="ocultarFormulario()">
-						<input type="button" class="adicionaPaciente__entrada--remove">
-					</div>
+					<input type="button" class="adicionaPaciente__entrada" onClick="eventosFormulario()">
 				</div>
 			</section>
 			<!--FORMULARIO-->
@@ -194,13 +213,6 @@
 									<td class="paciente__td info-gordura">19</td>
 									<td class="paciente__td info-imc">0</td>
 								</tr>
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">Maria</td>
-									<td class="paciente__td info-peso">64</td>
-									<td class="paciente__td info-altura">1.55</td>
-									<td class="paciente__td info-gordura">10</td>
-									<td class="paciente__td info-imc">0</td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -241,7 +253,7 @@
 		<script src="assets/src/js/adicionarPaciente.js"></script>
 		<script src="assets/src/js/filtraPaciente.js"></script>
 		<script src="assets/src/js/buscarPaciente.js"></script>
-		<script src="assets/src/js/formulario.js"></script>
+		<script src="assets/src/js/ocultarEExibir.js"></script>
 
 	</body>
 </html>

@@ -1,4 +1,4 @@
-.adicionaPaciente__entrada--adiciona, .adicionaPaciente__entrada--remove {
+.adicionaPaciente__entrada {
    background-position: center;
    background-size: 80%;
    background-repeat: no-repeat;
@@ -9,16 +9,5 @@
    background-color: transparent;
    border: none;
    cursor: pointer;
-}
-
-.adicionaPaciente__entrada--adiciona {
    background-image: url(https://image.flaticon.com/icons/png/512/179/179402.png);
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
-
-}
-
-.adicionaPaciente__entrada--remove {
-   background-image: url(https://image.flaticon.com/icons/png/512/179/179396.png);
 }

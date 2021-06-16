@@ -1,0 +1,5 @@
+.instrucoes__icone {
+   cursor: pointer;
+   width: 1.5rem;
+   align-self: flex-end;
+}

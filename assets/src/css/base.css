@@ -10,7 +10,7 @@
  
 #conteudo__container {
   margin: auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .corpo__background {
@@ -25,8 +25,15 @@
 }
 
 section {
-  margin: 2em 0;
+  margin: 2rem 0;
   overflow: hidden;
+}
+
+th {
+  border: none;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--black);
 }
 
 .titulo {
@@ -34,6 +41,9 @@ section {
   font-weight: 700;
   text-align: left;
   padding: 1rem 0;
+  border-bottom: 2px solid var(--white);
+  margin-bottom: 2rem;
+
 }
 
 .info-imc {

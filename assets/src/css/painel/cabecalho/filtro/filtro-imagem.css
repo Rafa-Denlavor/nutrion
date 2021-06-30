@@ -1,5 +1,5 @@
 .filtro__imagem {
-   width: 2rem;
-   padding: 0.4rem;
+   width: 3rem;
+   padding: 0.4rem 1rem;
    background-color: var(--primary-color);
 }

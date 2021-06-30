@@ -1,5 +1,8 @@
 .instrucoes__icone {
    cursor: pointer;
-   width: 1.5rem;
+   width: 1rem;
    align-self: flex-end;
+   position: absolute;
+   right: 0;
+   top: 0;
 }

@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Nutrion | Dashboard</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="public/img/icon/apple-touch-icon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"><!--FONT AWESOME-->
+		<link rel="apple-touch-icon" sizes="180x180" href="public/img/icon/apple-touch-icon.png"><!--ICON-->
 		<link rel="icon" type="image/png" sizes="32x32" href="public/img/icon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="public/img/icon/favicon-16x16.png">
 		<link rel="manifest" href="site.webmanifest">
@@ -29,7 +30,7 @@
 		<link rel="stylesheet" href="src/css/painel/instrucoes/instrucoes-lista.css">
 		<link rel="stylesheet" href="src/css/painel/instrucoes/instrucoes-item.css">
 		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-container.css"><!--ADICIONA PACIENTE-->
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-entrada.css">
+		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-inputs.css">
 		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-icone.css">
 		<link rel="stylesheet" href="src/css/painel/pacientes/pacientes.css"><!--PACIENTES-->
 		<link rel="stylesheet" href="src/css/painel/pacientes/pacientes-container--tabela.css">
@@ -44,7 +45,6 @@
 		<link rel="stylesheet" href="src/css/painel/rodape/rodape.css"><!--RODAPE-->
 		<link rel="stylesheet" href="src/css/painel/rodape/rodape-logo.css">
 		<link rel="stylesheet" href="src/css/painel/rodape/redesocial-paragrafo.css">
-		<link rel="stylesheet" href="src/css/painel/retornaAoInicio/retornaAoInicio-imagem.css">
 		<link rel="stylesheet" href="src/css/painel/rodape/redesocial-imagem.css">
 		<link rel="stylesheet" href="src/css/painel/rodape/redesocial-link.css">
 	</head>
@@ -75,12 +75,14 @@
 		</header>
 		<main id="conteudo__container">
 			<div>
-				<h2 class="titulo container">Dashboard</h2>
+				<h2 class="titulo titulo__principal container">Dashboard</h2>
 			</div>
 			<section id="instrucoes" class="container">
 				<div class="instrucoes__container">
 					<h3 class="instrucoes__titulo">Instruções</h3>
-					<img src="public/img/icone-fechar.png" alt="" title="Adicionar novo paciente" class="instrucoes__icone">
+					<span class="ocultar__icone">
+						<img src="public/img/icone-fechar.png" alt="" title="Adicionar novo paciente" onClick="ocultar()" class="instrucoes__icone">
+					</span>
 				</div>
 				<div>
 					<ul class="instrucoes__lista">
@@ -91,7 +93,8 @@
 			</section>
 			<section id="adicionaPaciente" class="container">
 				<div class="adicionaPaciente__container"> 
-					<input type="button" class="adicionaPaciente__entrada" onClick="eventosFormulario()">
+					<input type="button" class="adicionaPaciente__entrada" onClick="mostrarFormulario()">
+					<input type="button" class="adicionaPaciente__fechar" onClick="fecharFormulario()">
 				</div>
 			</section>
 			<!--FORMULARIO-->
@@ -233,6 +236,7 @@
 		<script src="src/js/adicionarPaciente.js"></script>
 		<script src="src/js/filtraPaciente.js"></script>
 		<script src="src/js/buscarPaciente.js"></script>
-		<script src="src/js/ocultarEExibir.js"></script>
+		<script src="src/js/ocultarInstrucoes.js"></script>
+		<script src="src/js/acoesFormulario.js"></script>
 	</body>
 </html>

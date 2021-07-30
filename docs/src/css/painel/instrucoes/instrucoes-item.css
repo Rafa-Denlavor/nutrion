@@ -1,3 +1,4 @@
-.instrucoes__item {
-   color: var(--black);
+.instrucoes__item i {
+   color: var(--primary-color);
+   padding-right: 0.4rem;
 }

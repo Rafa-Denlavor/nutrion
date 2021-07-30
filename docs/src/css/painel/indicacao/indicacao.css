@@ -1,8 +1,10 @@
-#instrucoes {
-   padding: 1.2rem 2rem;
+#indicacao {
+   padding: 1rem 1rem;
    background-color: var(--primary-color);
    display: flex;
    margin-top: 2rem;
    flex-direction: column;
    border-radius: 5px;
+   width: 35rem;
+
 }

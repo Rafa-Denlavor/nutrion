@@ -1,5 +1,5 @@
 var iconeInstrucoes = document.querySelector(".ocultar__icone");
-var containerInstrucoes = document.querySelector("#instrucoes");
+var containerInstrucoes = document.querySelector("#indicacao");
 
 iconeInstrucoes.addEventListener("click", function ocultar() {
    if(containerInstrucoes.style.display = "block") {

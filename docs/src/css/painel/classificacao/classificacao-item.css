@@ -1,3 +1,7 @@
 .classificacao__item {
-    list-style-type: disc;
+    list-style: none;
+}
+
+.classificacao__item i{
+    padding-right: 0.2rem;
 }

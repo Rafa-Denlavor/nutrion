@@ -1,23 +1,23 @@
-.marcador__azul::marker {
+.marcador__azul {
     color: var(--light-blue);
 }
 
-.marcador__verde::marker {
+.marcador__verde {
     color: var(--green-300);
 }
 
-.marcador__amarelo::marker {
+.marcador__amarelo {
     color: var(--yellow);
 }
 
-.marcador__laranja::marker {
+.marcador__laranja {
     color: var(--orange);
 }
 
-.marcador__vermelho::marker {
+.marcador__vermelho {
     color: var(--red);
 }
 
-.marcador__roxo::marker {
+.marcador__roxo {
     color: var(--purple);
 }

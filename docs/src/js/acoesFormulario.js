@@ -1,7 +1,6 @@
 const visibilidade = true ;
 const formulario = document.getElementById('formulario');
 
-
 function mostrarFormulario() {
    if(visibilidade) {
       formulario.classList.add('mostrar');

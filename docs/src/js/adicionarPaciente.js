@@ -1,13 +1,10 @@
 //captura o botao do formulario de adicionar paciente
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 
-
-//funcao para adicionar paciente
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
     
     const form = document.querySelector("#form-adiciona");
-    
     const paciente = obtemPacienteDoFormulario(form);
 
     const erros = validaPaciente(paciente);
@@ -24,10 +21,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     mensagemErro.innerHTML = "";
 });
 
-/*funções*/
-
 function adicionaPacienteNaTabela(paciente) {
-    //Captura a tabela de pacientes
     const pacienteTr = montaTr(paciente);
     const tabela = document.querySelector("#pacientes__tabela");
     tabela.appendChild(pacienteTr);
@@ -42,30 +36,23 @@ function exibeMensagemDeErro (erros) {
         li.textContent = erro;
         ul.appendChild(li);
     });
-
 }
 
 function obtemPacienteDoFormulario(form) {
-
-    //criacao de um objeto com os seus atributos abstraidos do formulario
     const paciente = {
         nome: form.nome.value,
         peso: form.peso.value,
         altura: form.altura.value,
         gordura: form.gordura.value,
         imc: calculaImc(form.peso.value, form.altura.value)
-
     }
-    
     return paciente;
 }
 
 function montaTr(paciente) {
-    //Cria as linhas da tabela
     let pacienteTr = document.createElement("tr");
     pacienteTr.classList.add("paciente__tr");
  
-     //Adiciona os fihos (na tr)
      pacienteTr.appendChild(montaTd(paciente.nome, "paciente__td", "info-nome"));
      pacienteTr.appendChild(montaTd(paciente.peso, "paciente__td", "info-peso"));
      pacienteTr.appendChild(montaTd(paciente.altura, "paciente__td", "info-altura"));
@@ -83,38 +70,17 @@ function montaTd(dado, classe) {
     return td;
 }
 
-
 function validaPaciente(paciente) {
-
     const erros = [];
 
-    if(paciente.nome.length == 0) {
-        erros.push("Preencha o nome!");
-    }
+    if(paciente.nome.length == 0) erros.push("Preencha o nome!");
+    if(paciente.peso.length == 0) erros.push("Preencha o peso!");
+    if(paciente.altura.length == 0) erros.push("Preencha a altura!");
+    if(paciente.gordura.length == 0) erros.push("Preencha a gordura!");
 
-    if(paciente.peso.length == 0) {
-        erros.push("Preencha o peso!");
-    }
-
-    if(paciente.altura.length == 0) {
-        erros.push("Preencha a altura!");
-    }
-
-    if(paciente.gordura.length == 0) {
-        erros.push("Preencha a gordura!");
-    }
-
-    if(!validaPeso(paciente.peso)) {
-        erros.push("Peso inválido!");
-    }
-
-    if(!validaAltura(paciente.altura)) {
-        erros.push("Altura inválida!");
-    }
-
-    if(!validaGordura(paciente.gordura)) {
-        erros.push("Gordura inválida!");
-    }
+    if(!validaPeso(paciente.peso)) erros.push("Peso inválido!");
+    if(!validaAltura(paciente.altura)) erros.push("Altura inválida!");
+    if(!validaGordura(paciente.gordura)) erros.push("Gordura inválida!");
 
     return erros;
 }

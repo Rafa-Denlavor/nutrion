@@ -1,0 +1,4 @@
+.instructions__item i {
+   color: var(--primary-color);
+   padding-right: 0.4rem;
+}

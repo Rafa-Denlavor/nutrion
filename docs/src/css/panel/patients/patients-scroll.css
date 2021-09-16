@@ -1,0 +1,4 @@
+.patients__scroll {
+   max-height: 475px;
+   overflow-y: auto;
+}

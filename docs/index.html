@@ -10,174 +10,150 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="public/img/icon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="public/img/icon/favicon-16x16.png">
 		<link rel="manifest" href="site.webmanifest">
-		<link rel="stylesheet" type="text/css" href="src/css/base.css"><!--CSS-->
-		<link rel="stylesheet" href="src/css/painel/cabecalho/cabecalho.css"><!--CABECALHO-->
-		<link rel="stylesheet" href="src/css/painel/cabecalho/cabecalho-logo.css">
-		<link rel="stylesheexxt" href="src/css/painel/cabecalho/menu/menu-lista.css"><!--MENU-->
-		<link rel="stylesheet" href="src/css/painel/cabecalho/menu/menu-item.css">
-		<link rel="stylesheet" href="src/css/painel/cabecalho/menu/menu-link.css">
-		<link rel="stylesheet" href="src/css/painel/cabecalho/filtro/filtro-container.css"><!--FILTRO-->
-		<link rel="stylesheet" href="src/css/painel/cabecalho/filtro/filtro-imagem.css">
-		<link rel="stylesheet" href="src/css/painel/cabecalho/filtro/filtro-tabela.css">
-		<link rel="stylesheet" href="src/css/painel/indicacao/indicacao.css"><!--INDICACAO-->
-		<link rel="stylesheet" href="src/css/painel/indicacao/indicacao-container.css">
-		<link rel="stylesheet" href="src/css/painel/indicacao/indicacao-icone.css">
-		<link rel="stylesheet" href="src/css/painel/indicacao/indicacao-descricao.css">
-		<link rel="stylesheet" href="src/css/painel/indicacao/indicacao-link.css">
-		<link rel="stylesheet" href="src/css/painel/instrucoes/instrucoes-lista.css"><!--INTRUCOES-->
-		<link rel="stylesheet" href="src/css/painel/instrucoes/instrucoes-item.css">
-		<link rel="stylesheet" href="src/css/painel/classificacao/classificacao.css"><!--CLASSIFICACAO-->
-		<link rel="stylesheet" href="src/css/painel/classificacao/classificacao-lista.css">
-		<link rel="stylesheet" href="src/css/painel/classificacao/classificacao-item.css">
-		<link rel="stylesheet" href="src/css/painel/classificacao/marcadores.css">
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-container.css"><!--ADICIONA PACIENTE-->
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-inputs.css">
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/adicionaPaciente-icone.css">
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/formulario/formulario.css"><!--FORMULARIO-->
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/formulario/formulario-container.css">
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/formulario/formulario-rotulo.css">
-		<link rel="stylesheet" href="src/css/painel/adicionaPaciente/formulario/formulario-campo.css">
-		<link rel="stylesheet" href="src/css/painel/pacientes/pacientes.css"><!--PACIENTES-->
-		<link rel="stylesheet" href="src/css/painel/pacientes/pacientes-container--tabela.css">
-		<link rel="stylesheet" href="src/css/painel/pacientes/pacientes-tabela.css">
-		<link rel="stylesheet" href="src/css/painel/pacientes/pacientes-scroll.css">
-		<link rel="stylesheet" href="src/css/painel/pacientes/paciente-tr.css">
-		<link rel="stylesheet" href="src/css/painel/pacientes/paciente-td.css">
-		<link rel="stylesheet" href="src/css/painel/rodape/rodape.css"><!--RODAPE-->
-		<link rel="stylesheet" href="src/css/painel/rodape/rodape-logo.css">
-		<link rel="stylesheet" href="src/css/painel/rodape/redesocial-paragrafo.css">
-		<link rel="stylesheet" href="src/css/painel/rodape/redesocial-imagem.css">
-		<link rel="stylesheet" href="src/css/painel/rodape/redesocial-link.css">
+		<link rel="stylesheet" type="text/css" href="src/css/global.css"><!--CSS / GLOBAL-->
+		<link rel="stylesheet" href="src/css/colors.css"><!--CSS / COLORS-->
+		<link rel="stylesheet" href="src/css/reusable.css"><!--CSS / REUSABLE-->
+		<link rel="stylesheet" href="src/css/panel/header/header.css"><!--HEADER-->
+		<link rel="stylesheet" href="src/css/panel/header/menu/menu-link.css"><!--MENU-->
+		<link rel="stylesheet" href="src/css/panel/header/filter/filter.css"><!--FILTER-->
+		<link rel="stylesheet" href="src/css/panel/header/filter/filter-image.css">
+		<link rel="stylesheet" href="src/css/panel/header/filter/filter-table.css">
+		<link rel="stylesheet" href="src/css/panel/recommendation/recommendation.css"><!--RECOMMENDATION-->
+		<link rel="stylesheet" href="src/css/panel/recommendation/recommendation-container.css">
+		<link rel="stylesheet" href="src/css/panel/recommendation/recommendation-icon.css">
+		<link rel="stylesheet" href="src/css/panel/recommendation/recommendation-description.css">
+		<link rel="stylesheet" href="src/css/panel/recommendation/recommendation-link.css">
+		<link rel="stylesheet" href="src/css/panel/instructions/instructions-list.css"><!--INSTRUCTIONS-->
+		<link rel="stylesheet" href="src/css/panel/instructions/instructions-item.css">
+		<link rel="stylesheet" href="src/css/panel/addPatient/addPatient-container.css"><!--ADD PATIENT-->
+		<link rel="stylesheet" href="src/css/panel/addPatient/addPatient-inputs.css">
+		<link rel="stylesheet" href="src/css/panel/addPatient/addPatient-icon.css">
+		<link rel="stylesheet" href="src/css/panel/addPatient/form/form.css"><!--ADD PATIENT / form-->
+		<link rel="stylesheet" href="src/css/panel/addPatient/form/form-container.css">
+		<link rel="stylesheet" href="src/css/panel/addPatient/form/form-label.css">
+		<link rel="stylesheet" href="src/css/panel/addPatient/form/form-campo.css">
+		<link rel="stylesheet" href="src/css/panel/classification/classification.css"><!--CLASSIFICATION-->
+		<link rel="stylesheet" href="src/css/panel/classification/classification-list.css">
+		<link rel="stylesheet" href="src/css/panel/classification/classification-item.css">
+		<link rel="stylesheet" href="src/css/panel/classification/marcadores.css">
+		<link rel="stylesheet" href="src/css/panel/patients/patients.css"><!--patients-->
+		<link rel="stylesheet" href="src/css/panel/patients/patients-container--table.css">
+		<link rel="stylesheet" href="src/css/panel/patients/patients-table.css">
+		<link rel="stylesheet" href="src/css/panel/patients/patients-scroll.css">
+		<link rel="stylesheet" href="src/css/panel/patients/patient-tr.css">
+		<link rel="stylesheet" href="src/css/panel/patients/patient-td.css">
+		<link rel="stylesheet" href="src/css/panel/footer/footer.css"><!--FOOTER-->
+		<link rel="stylesheet" href="src/css/panel/footer/redesocial-paragrafo.css">
+		<link rel="stylesheet" href="src/css/panel/footer/redesocial-imagem.css">
+		<link rel="stylesheet" href="src/css/panel/footer/redesocial-link.css">
 	</head>
 	<body class="corpo__background">
-		<!--CABECALHO-->
-		<header id="cabecalho">
+		<header id="header"><!--header-->
 			<picture>
-				<img src="public/img/nutrion.png" alt="Logo da Nutrion" class="cabecalho__logo">
+				<img src="public/img/nutrion.png" alt="Logo da Nutrion" class="logo">
 			</picture>
-			<div class="menu__container">
-				<nav class="menu">
-					<ul class="menu__lista">
-						<li class="menu__item">
-							<a class="menu__link" href="#">Dashboard</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Orçamento</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Anotações</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<!--FILTRO-->
-			<div class="filtro__container">
-				<img src="public/img/lupa.svg" alt="Filtrar paciente" class="filtro__imagem">
-				<input type="text" name=filtro id="filtro__tabela" placeholder="Busque um paciente...">
+			<nav class="menu">
+				<a class="menu__link" href="#">Dashboard</a>
+				<a class="menu__link" href="#">Orçamento</a>
+				<a class="menu__link" href="#">Anotações</a>
+			</nav>
+			<div class="filter"><!--filter-->
+				<img class="filter__image" src="public/img/lupa.svg" alt="Filtrar paciente">
+				<input id="filter__table" name=filter type="text" placeholder="Busque um paciente...">
 			</div>
 		</header>
-		<main id="conteudo__container">
-			<!--DASHBOARD-->
+		<main id="dashboard"><!--DASHBOARD-->
 			<div>
-				<h2 class="titulo titulo__principal container">Dashboard</h2>
+				<h2 class="title container">Dashboard</h2>
 			</div>
-			<!--INSTRUCOES-->
-			<section id="instrucoes" class="container">
+			<section id="instructions" class="container"><!--INSTRUCTIONS-->
 				<div>
-					<ul class="instrucoes__lista">
-						<li class="instrucoes__item">
+					<ul class="instructions__list">
+						<li class="instructions__item">
 							<i class="fas fa-mouse"></i>
 							Dê dois clicks nos dados do paciente para removê-lo da tabela.
 						</li>
-						<li class="instrucoes__item">
+						<li class="instructions__item">
 							<i class="fas fa-user-edit"></i>
 							Clique sobre o dado pare editá-lo.
 						</li>
 					</ul>
 				</div>
 			</section>
-			<!--INDICACAO-->
-			<section id="indicacao" class="container">
-				<div class="indicacao__container">
-					<span class="ocultar__icone">
-						<img src="public/img/icone-fechar.png" alt="" title="Adicionar novo paciente" onClick="ocultar()" class="indicacao__icone">
+			<section id="recommendation" class="container"><!--RECOMMENDATION-->
+				<div class="recommendation__container">
+					<span class="hidden__icon">
+						<img src="public/img/icone-fechar.png" alt="" title="Adicionar novo paciente" onClick="hiddenIcon()" class="recommendation__icon">
 					</span>
-					<p class="indicacao__descricao">Saiba mais sobre nutricionismo</p>
-					<a href="https://www.tuasaude.com/" target="_blank" class="indicacao__link">Conheça o  TuaSaude</a>
+					<p class="recommendation__description">Saiba mais sobre nutricionismo</p>
+					<a href="https://www.tuasaude.com/" target="_blank" class="recommendation__link">Conheça o  TuaSaude</a>
 				</div>
 			</section>
-			<!--ADICIONA PACIENTE-->
-			<section id="adicionaPaciente" class="container">
-				<div class="adicionaPaciente__container"> 
-					<input type="button" class="adicionaPaciente__entrada" onClick="mostrarFormulario()">
-					<input type="button" class="adicionaPaciente__fechar" onClick="fecharFormulario()">
+			<section id="addPatient" class="container"><!--ADD PATIENT-->
+				<div class="addPatient__container"> 
+					<input type="button" class="addPatient__inputOpen" onClick="openForm()">
+					<input type="button" class="addPatient__inputClose" onClick="closeForm()">
 				</div>
 			</section>
-			<!--FORMULARIO-->
-			<section id="formulario" class="container invisivel">
-				<h2 class="titulo">Novo paciente</h2>
+			<section id="form" class="container invisivel"><!--form-->
+				<h2 class="title">Novo paciente</h2>
 				<ul id="mensagensErro"></ul>
 				<form id="form-adiciona">
-					<fieldset class="formulario__container">
+					<fieldset class="form__container">
 						<div class="grupo">
-							<label class="formulario__rotulo" for="nome">Nome completo:</label>
-							<input id="nome" name="nome" type="text" placeholder="Ex: Helena Cristina Rousel" class="formulario__campo">
+							<label class="form__label" for="nome">Nome completo:</label>
+							<input id="nome" name="nome" type="text" placeholder="Ex: Helena Cristina Rousel" class="form__campo">
 						</div>
 						<div class="grupo">
-							<label class="formulario__rotulo" for="peso">Peso:</label>
-							<input id="peso" name="peso" type="text" placeholder="Ex: 70" class="formulario__campo">
+							<label class="form__label" for="peso">Peso:</label>
+							<input id="peso" name="peso" type="text" placeholder="Ex: 70" class="form__campo">
 						</div>
 						<div class="grupo">
-							<label class="formulario__rotulo" for="altura">Altura:</label>
-							<input id="altura" name="altura" type="text" placeholder="Ex: 1.72" class="formulario__campo">
+							<label class="form__label" for="altura">Altura:</label>
+							<input id="altura" name="altura" type="text" placeholder="Ex: 1.72" class="form__campo">
 						</div>
 						<div class="grupo">
-							<label class="formulario__rotulo" for="gordura">% de Gordura:</label>
-							<input id="gordura" type="text" placeholder="Ex: 10" class="formulario__campo">
-						</div>
-						<div>
-
+							<label class="form__label" for="gordura">% de Gordura:</label>
+							<input id="gordura" type="text" placeholder="Ex: 10" class="form__campo">
 						</div>
 					</fieldset>
-					<button id="adicionar-paciente" class="botao">Adicionar</button>
+					<button id="adicionar-paciente" class="botao__default">Adicionar</button>
 				</form>
 			</section>
-			<!--CLASSIFICACAO-->
-			<section id="classificacao" class="container">
-				<div class="classificacao">
-					<ul class="classificacao__lista">
-						<li class="classificacao__item">
+			<section id="classification" class="container"><!--classification-->
+				<div class="classification">
+					<ul class="classification__list">
+						<li class="classification__item">
 							<i class="fas fa-stethoscope marcador__azul"></i>
 							Peso baixo
 						</li>
-						<li class="classificacao__item">
+						<li class="classification__item">
 							<i class="fas fa-stethoscope marcador__verde"></i>
 							Saudável
 						</li>
-						<li class="classificacao__item">
+						<li class="classification__item">
 							<i class="fas fa-stethoscope marcador__amarelo"></i>
 							Sobrepeso
 						</li>
-						<li class="classificacao__item">
+						<li class="classification__item">
 							<i class="fas fa-stethoscope marcador__laranja"></i>
 							Obesidade 1
 						</li>
-						<li class="classificacao__item">
+						<li class="classification__item">
 							<i class="fas fa-stethoscope marcador__vermelho"></i>
 							Obesidade Severa 2
 						</li>
-						<li class="classificacao__item">
+						<li class="classification__item">
 							<i class="fas fa-stethoscope marcador__roxo"></i>
 							Obesidade Mórbida 3
 						</li>
 					</ul>
 				</div>
 			</section>
-			<!--PACIENTES-->
-			<section id="pacientes" class="container">
-				<div class="pacientes__container--tabela">
-					<div class="pacientes__scroll">
-						<table id="pacientes__tabela">
+			<section id="patients" class="container"><!--patients-->
+				<div class="patients__container--table">
+					<div class="patients__scroll">
+						<table id="patients__table">
 							<thead>
 								<tr>
 									<th>Nome</th>
@@ -187,67 +163,63 @@
 									<th>IMC</th>
 								</tr>
 							</thead>
-							<tbody id="pacientes__tabela">
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">Paulo</td>
-									<td class="paciente__td info-peso">150</td>
-									<td class="paciente__td info-altura">2.00</td>
-									<td class="paciente__td info-gordura">10</td>
-									<td class="paciente__td info-imc">0</td>
+							<tbody id="patients__table">
+								<tr class="patient__tr">
+									<td class="patient__td info-nome">Paulo</td>
+									<td class="patient__td info-peso">150</td>
+									<td class="patient__td info-altura">2.00</td>
+									<td class="patient__td info-gordura">10</td>
+									<td class="patient__td info-imc">0</td>
 								</tr>
-
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">João</td>
-									<td class="paciente__td info-peso">90</td>
-									<td class="paciente__td info-altura">1.72</td>
-									<td class="paciente__td info-gordura">40</td>
-									<td class="paciente__td info-imc">0</td>
+								<tr class="patient__tr">
+									<td class="patient__td info-nome">João</td>
+									<td class="patient__td info-peso">90</td>
+									<td class="patient__td info-altura">1.72</td>
+									<td class="patient__td info-gordura">40</td>
+									<td class="patient__td info-imc">0</td>
 								</tr>
-
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">Erica</td>
-									<td class="paciente__td info-peso">54</td>
-									<td class="paciente__td info-altura">2.33</td>
-									<td class="paciente__td info-gordura">14</td>
-									<td class="paciente__td info-imc">0</td>
+								<tr class="patient__tr">
+									<td class="patient__td info-nome">Erica</td>
+									<td class="patient__td info-peso">54</td>
+									<td class="patient__td info-altura">2.33</td>
+									<td class="patient__td info-gordura">14</td>
+									<td class="patient__td info-imc">0</td>
 								</tr>
-
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">Douglas</td>
-									<td class="paciente__td info-peso">80</td>
-									<td class="paciente__td info-altura">1.73</td>
-									<td class="paciente__td info-gordura">24</td>
-									<td class="paciente__td info-imc">0</td>
+								<tr class="patient__tr">
+									<td class="patient__td info-nome">Douglas</td>
+									<td class="patient__td info-peso">80</td>
+									<td class="patient__td info-altura">1.73</td>
+									<td class="patient__td info-gordura">24</td>
+									<td class="patient__td info-imc">0</td>
 								</tr>
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">Tatiana</td>
-									<td class="paciente__td info-peso">46</td>
-									<td class="paciente__td info-altura">1.55</td>
-									<td class="paciente__td info-gordura">19</td>
-									<td class="paciente__td info-imc">0</td>
+								<tr class="patient__tr">
+									<td class="patient__td info-nome">Tatiana</td>
+									<td class="patient__td info-peso">46</td>
+									<td class="patient__td info-altura">1.55</td>
+									<td class="patient__td info-gordura">19</td>
+									<td class="patient__td info-imc">0</td>
 								</tr>
-								<tr class="paciente__tr">
-									<td class="paciente__td info-nome">Henrique</td>
-									<td class="paciente__td info-peso">250</td>
-									<td class="paciente__td info-altura">2.20</td>
-									<td class="paciente__td info-gordura">19</td>
-									<td class="paciente__td info-imc">0</td>
+								<tr class="patient__tr">
+									<td class="patient__td info-nome">Henrique</td>
+									<td class="patient__td info-peso">250</td>
+									<td class="patient__td info-altura">2.20</td>
+									<td class="patient__td info-gordura">19</td>
+									<td class="patient__td info-imc">0</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<span id="erro__ajax" class="invisivel">Erro ao buscar os pacientes</span>
-					<button id="buscar-paciente" class="botao ">Buscar paciente</button>
+					<span id="erro__ajax" class="invisivel">Erro ao buscar os patients</span>
+					<button id="search__patient" class="botao__default">Buscar paciente</button>
 				</div>
 			</section>
 		</main>
-		<!--RODAPE-->
-		<footer id=rodape>
+		<footer id=footer><!--footer-->
 			<div>
 				<picture>
-					<img src="public/img/nutrion-preto.svg" alt="Logo da Nutrion" class="rodape__logo">
+					<img src="public/img/nutrion-preto.svg" alt="Logo da Nutrion" class="logo">
 				</picture>
-			<p class="redeSocial__paragrafo">Entre em contato através das nossas redes sociais:</p>
+				<p class="redeSocial__paragrafo">Entre em contato através das nossas redes sociais:</p>
 			</div>
 			<div class=redeSocial>
 				<a href="tel:+5511960307271" target="_blank" rel="external" class="redeSocial__link">
@@ -269,11 +241,12 @@
 		</footer>
 
 		<script src="src/js/calculaImc.js"></script>
-		<script src="src/js/removerPaciente.js"></script>
-		<script src="src/js/adicionarPaciente.js"></script>
+		<script src="src/js/removePatient.js"></script>
+		<script src="src/js/addPatient.js"></script>
 		<script src="src/js/filtraPaciente.js"></script>
-		<script src="src/js/buscarPaciente.js"></script>
-		<script src="src/js/ocultarInstrucoes.js"></script>
-		<script src="src/js/acoesFormulario.js"></script>
+		<script src="src/js/searchPatient.js"></script>
+		<script src="src/js/hiddenIcon.js"></script>
+		<script src="src/js/acoesForm.js"></script>
+		
 	</body>
 </html>

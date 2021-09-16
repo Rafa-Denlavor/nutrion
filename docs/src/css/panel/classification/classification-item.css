@@ -1,0 +1,7 @@
+.classification__item {
+    list-style: none;
+}
+
+.classification__item i{
+    padding-right: 0.2rem;
+}

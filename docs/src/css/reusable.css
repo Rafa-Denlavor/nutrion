@@ -1,0 +1,97 @@
+.logo {
+  width: 10em;
+} 
+
+.corpo__background {
+  background-color: var(--gray-700);
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--white);
+
+}
+
+.info-imc {
+  color: var(--black);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.grupo {
+  display: block;
+  padding: 10px 0px;
+}
+
+.paciente__invalido {
+  background-color: var(--invalido);
+  font-weight: bold;
+}
+
+.botao__default {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--branco);
+  cursor: pointer;
+  display: block;
+  padding: 0.7em 2em;
+  width: 12rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.botao__default:hover {
+  background-color: var(--primary-color);
+  transition-delay: 2ms;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: 0.5ms;
+}
+
+/*  DISPLAYS  */
+
+.invisivel {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
+/*  CORES DA CLASSIFICACAO  */
+
+.pesoBaixo__cor {
+  background-color:var(--light-blue);
+}
+
+.saudavel__cor {
+  background-color: var(--green-300);
+}
+
+.sobrepeso__cor {
+  background-color: var(--yellow);
+}
+
+.obesidade__cor {
+  background-color: var(--orange);
+}
+
+.obesidadeSevera__cor {
+  background-color: var(--red);
+}
+
+.obesidadeMorbida__cor {
+  background-color: var(--purple);
+}

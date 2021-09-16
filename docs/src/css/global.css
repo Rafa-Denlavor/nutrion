@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&family=Raleway:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 15px; 
+  font-family: 'Raleway', sans-serif;
+  color: var(--white)
+}
+
+section {
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+th {
+  border: none;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--black);
+}
+
+#dashboard {
+  margin: auto;
+  padding: 1rem 0;
+}
+
+#adicionar-paciente {
+  margin-top: 30px;
+}
+
+/*ESTILO - JAVASCRIPT*/
+
+#mensagensErro {
+  color: var(--invalido);
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+/*------MEDIA QUERY'S------*/
+
+@media screen and (min-width: 0) {
+  .container {
+    width: 90%;
+  }
+
+  #dashboard {
+    width: 100%;
+  }
+
+  body {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+}

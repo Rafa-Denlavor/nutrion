@@ -1,0 +1,5 @@
+.recommendation__link {
+   color: var(--secondary-color);
+   font-weight: bold;
+   text-decoration: none;
+}

@@ -1,0 +1,16 @@
+@media screen and (min-width: 1px) {
+
+	.classification__list {
+		display: block;
+        padding: 0 0.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    .classification__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom:1.5rem ;
+    }
+}

@@ -1,0 +1,13 @@
+.patient__tr {
+   font-weight: bold;
+   background-color: var(--secondary-color);
+   color: var(--white);
+   border: 2px solid var(--primary-color);
+ }
+
+.patient__td,
+.patient__tr {
+  padding: 0.7em;
+  margin: 0;
+  text-align: center;
+}

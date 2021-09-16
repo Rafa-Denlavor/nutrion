@@ -1,0 +1,20 @@
+.addPatient__inputOpen, .addPatient__inputClose {
+   background-position: center;
+   background-size: 80%;
+   background-repeat: no-repeat;
+   margin-left: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 5px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.addPatient__inputOpen {
+   background-image: url(https://image.flaticon.com/icons/png/512/179/179402.png);
+}
+
+.addPatient__inputClose {
+   background-image: url(https://image.flaticon.com/icons/png/512/179/179396.png);
+}

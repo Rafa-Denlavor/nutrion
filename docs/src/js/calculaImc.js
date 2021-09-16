@@ -1,4 +1,4 @@
-const pacientes = document.querySelectorAll(".paciente__tr");
+const pacientes = document.querySelectorAll(".patient__tr");
 
 for(let i = 0; i < pacientes.length; i++) {
     const paciente = pacientes[i];
@@ -20,17 +20,17 @@ for(let i = 0; i < pacientes.length; i++) {
  
     if(!pesoEValido) {
         tdImc.textContent = "Peso inválido!";
-        paciente.classList.add("paciente__invalido");
+        paciente.classList.add("patient__invalid");
     }
 
     if(!alturaEValida) {
         tdImc.textContent = "Altura inválida!";
-        paciente.classList.add("paciente__invalido");
+        paciente.classList.add("patient__invalid");
     }
 
     if(!gorduraEValida) {
         tdImc.textContent = "Gordura inválida!";
-        paciente.classList.add("paciente__invalido");
+        paciente.classList.add("paciente__invalid");
     }
 
     if(pesoEValido && alturaEValida && gorduraEValida) {

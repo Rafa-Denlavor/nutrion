@@ -1,0 +1,5 @@
+.filter__image {
+   width: 3rem;
+   padding: 0.4rem 1rem;
+   background-color: var(--primary-color);
+}

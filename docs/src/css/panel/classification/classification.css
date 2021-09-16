@@ -1,0 +1,11 @@
+@media screen and (min-width: 0px) {
+   #classification {
+       padding: 0 1rem;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   #classification {
+       padding: 0.5rem 1.5rem;
+   }
+}
